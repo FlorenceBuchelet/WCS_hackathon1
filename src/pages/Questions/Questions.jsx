@@ -12,7 +12,7 @@ import "./Questions.scss";
 
 function Questions() {
   return (
-    <div className="questions">
+    <div className="questions ">
       <aside className="questions__left">
         <h1 className="questions__title"></h1>
       </aside>
@@ -26,6 +26,8 @@ function Questions() {
         <Question7 />
         <Question8 />
         <Question9 />
+        <div className="s-large"></div>
+        <div className="s-small"></div>
       </aside>
     </div>
   );
