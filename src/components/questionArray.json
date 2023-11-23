@@ -7,7 +7,7 @@
   },
   {
     "id": 1,
-    "question": "Est-ce que tu aimes Noël",
+    "question": "Est-ce que tu aimes Noël ?",
     "response1": "Oui",
     "response2": "Non"
   },
@@ -43,7 +43,7 @@
   },
   {
     "id": 7,
-    "question": "As-tu déjà raté l'avions ?",
+    "question": "As-tu déjà raté l'avion ?",
     "response1": "Oui",
     "response2": "Non"
   },
