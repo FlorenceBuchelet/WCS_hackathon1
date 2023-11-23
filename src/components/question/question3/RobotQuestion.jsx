@@ -76,7 +76,7 @@ function RobotQuestion() {
         </div>
         <div className="robotQuestion__footer">
           <img
-            src="src/assets/footerrobotquestion.PNG"
+            src="../../../assets/footerrobotquestion.png"
             alt=""
             className="robotQuestion__footer--img"
           />
