@@ -10,9 +10,14 @@ function Question1() {
   };
   return (
     <div className="question1">
+        <h1 className="question1__title">Mais en es-tu digne ?</h1>
+          <img
+            className="question1__image"
+            src="../../assets/adoubement.jpg"
+            alt="tableau d'un adoubement"
+          />
       <section className="question1__section">
-        <h1>En es-tu digne ?</h1>
-        <button className="question1__button">
+        <button className="question1__buttons">
           <Link
             activeClass="active"
             to="question2"
@@ -21,10 +26,10 @@ function Question1() {
             offset={0}
             duration={5000}
             onClick={handleclick}>
-            Oui
+            Évidemment
           </Link>
         </button>
-        <button className="question1__button">
+        <button className="question1__buttons">
           <Link
             activeClass="active"
             to=""
@@ -33,14 +38,9 @@ function Question1() {
             offset={0}
             duration={5000}
             onClick={handleclick}>
-            non
+            Nope, vive Noël !!
           </Link></button>
       </section>
-      <img
-        className="question1__image"
-        src="../../assets/adoubement.jpg"
-        alt="tableau d'un adoubement"
-      />
     </div>
   );
 }
