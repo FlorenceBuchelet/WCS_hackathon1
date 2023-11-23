@@ -16,7 +16,9 @@ function Question6({ count, setCount, nextPos, setNextPos }) {
     }, 100);
   };
   const handleclickWrong = () => {
+    setNextPos(750);
     setCount(1);
+    setNextPos(750);
     setTimeout(() => {
       console.log("after timeout");
       scrollTo();
