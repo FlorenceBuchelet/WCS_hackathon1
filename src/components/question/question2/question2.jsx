@@ -16,7 +16,7 @@ function Question2() {
         <button className="question2__button">
           <Link
             activeClass="active"
-            to="question3"
+            to="robotQuestion"
             spy={true}
             smooth={true}
             offset={0}
