@@ -6,7 +6,7 @@ function Questions() {
   return (
     <div className="questions">
       <h1 className="questions__title">Questions</h1>
-        <YesNoQuestions />
+        <RobotQuestion />
     </div>
   );
 }
