@@ -1,0 +1,16 @@
+.WrongAnswerPopup {
+  border: 20px ridge #87ff50;
+  background: #e3c3c3;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  transition: o;
+  align-items: center;
+}
+.WrongAnswerPopup__closeButton {
+  background-color: red;
+  width: 60%;
+  /*  position: absolute;
+  top: 95%;
+  right: 95%; */
+}
