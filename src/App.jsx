@@ -7,7 +7,9 @@ function App() {
   return (
     <>
     <Homepage/>
+    <section className="App__question">
 <Questions />
+</section>
     </>
   );
 }
