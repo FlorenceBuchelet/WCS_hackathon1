@@ -17,7 +17,12 @@ function Questions() {
   return (
     <div className="questions">
       <h1 className="questions__title">Questions</h1>
-      {count >= 1 && (
+    <div className="questions ">
+      <aside className="questions__left">
+        <h1 className="questions__title"></h1>
+      </aside>
+      <aside className="questions__right">
+              {count >= 1 && (
         <Question1
           setCount={setCount}
           count={count}
@@ -89,6 +94,9 @@ function Questions() {
           setNextPos={setNextPos}
         />
       )}
+        <div className="s-large"></div>
+        <div className="s-small"></div>
+      </aside>
     </div>
   );
 }
