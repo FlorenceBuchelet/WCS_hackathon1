@@ -11,7 +11,14 @@ $font-color-1: white;
 $font-color-2: black;
 //fin des variables
 
+
+
 .App__question{
     position: relative;
     top:60em;
+    
+
 }
+ body{
+    background-color: $background-color;
+ }
