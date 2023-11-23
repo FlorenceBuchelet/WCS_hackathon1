@@ -6,7 +6,7 @@ function Question1() {
     console.log("enter handleCLick");
     setTimeout(() => {
       console.log("after timeout");
-    }, 5000);
+    }, 2000);
   };
   return (
     <div className="question1">
@@ -19,8 +19,9 @@ function Question1() {
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
-            onClick={handleclick}>
+            duration={2000}
+            onClick={handleclick}
+          >
             Oui
           </Link>
         </button>
@@ -32,9 +33,11 @@ function Question1() {
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}>
+            onClick={handleclick}
+          >
             non
-          </Link></button>
+          </Link>
+        </button>
       </section>
       <img
         className="question1__image"
@@ -44,6 +47,5 @@ function Question1() {
     </div>
   );
 }
-
 
 export default Question1;

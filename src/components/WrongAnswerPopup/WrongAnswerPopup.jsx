@@ -2,7 +2,7 @@ import "./WrongAnswerPopup.scss";
 import { useState } from "react";
 function WrongAnswerPopup() {
   const [show, setShow] = useState(true);
-  const [isActive, setIsActive] = useState("active");
+  const [isActive, setIsActive] = useState("notActive");
   const handleClick = () => {
     setTimeout(() => {
       setShow(!show);
