@@ -26,6 +26,8 @@ function Questions() {
         <Question7 />
         <Question8 />
         <Question9 />
+        <div className="s-large"></div>
+        <div className="s-small"></div>
       </aside>
     </div>
   );
