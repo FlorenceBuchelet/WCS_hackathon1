@@ -6,12 +6,15 @@ import RobotQuestion from "./components/question/question3/RobotQuestion";
 import Question4 from "./components/question/question4/question4";
 import Question5 from "./components/question/question5/question5"; */
 import Questions from "./pages/Questions/Questions";
+import Homepage from "./pages/Homepage/Homepage";
 
 function App() {
   return (
     <>
-      <WrongAnswerPopup />
-      <Questions />
+      <Homepage />
+      <section className="App__question">
+        <Questions />
+      </section>
     </>
   );
 }

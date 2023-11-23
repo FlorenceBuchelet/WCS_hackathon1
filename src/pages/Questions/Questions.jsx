@@ -14,6 +14,7 @@ import "./Questions.scss";
 function Questions() {
   const [count, setCount] = useState(1);
   const [nextPos, setNextPos] = useState(750);
+  /*   const [show, setShow] = useState("false"); */
   return (
     <div className="questions">
       <h1 className="questions__title">Questions</h1>
