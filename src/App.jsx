@@ -12,9 +12,13 @@ function App() {
   return (
     <>
       <Homepage />
-      <section className="App__question">
-        <Questions />
-      </section>
+      <div className="snow">
+        <section className="App__question">
+          <Questions />
+        </section>
+        <div className="s-large"></div>
+        <div className="s-small"></div>
+      </div>
     </>
   );
 }
