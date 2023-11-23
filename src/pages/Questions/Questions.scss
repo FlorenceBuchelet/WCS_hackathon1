@@ -1,3 +1,10 @@
 .questions {
-    background-color: green;
+  background-color: green;
+  position: absolute;
+  width: 96%;
+  height: 96%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
 }
+

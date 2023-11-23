@@ -1,12 +1,30 @@
 import "./question1.scss";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Question1() {
+  const handleclick = () => {
+    console.log("enter handleCLick");
+    setTimeout(() => {
+      console.log("after timeout");
+    }, 5000);
+  };
   return (
     <div className="question1">
       <section className="question1__section">
         <h1>En es-tu digne ?</h1>
-        <button>Oui</button>
-        <button>Non</button>
+        <button className="question1__button">
+          <Link
+            activeClass="active"
+            to="question2"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={5000}
+            onClick={handleclick}>
+            Oui
+          </Link>
+        </button>
+        <button className="question1__button">Non</button>
       </section>
       <img
         className="question1__image"
@@ -16,5 +34,6 @@ function Question1() {
     </div>
   );
 }
+
 
 export default Question1;
