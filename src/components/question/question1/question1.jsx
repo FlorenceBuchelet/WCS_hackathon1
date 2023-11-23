@@ -24,7 +24,17 @@ function Question1() {
             Oui
           </Link>
         </button>
-        <button className="question1__button">Non</button>
+        <button className="question1__button">
+          <Link
+            activeClass="active"
+            to=""
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={5000}
+            onClick={handleclick}>
+            non
+          </Link></button>
       </section>
       <img
         className="question1__image"
