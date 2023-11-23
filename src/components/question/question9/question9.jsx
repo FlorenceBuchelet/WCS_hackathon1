@@ -11,8 +11,10 @@ function Question9() {
   return (
     <div className="question9">
       <section className="question9__section">
-        <h1>Est-ce que tu aimes Noël ?</h1>
-        <button className="question9__button">
+        <h1 className="question9__title">Est-ce que tu aimes Noël ?</h1>
+        <div className="question9__buttons--container">
+
+        <button className="question9__buttons question9__buttons--left">
         <Link
             activeClass="active"
             to="question1"
@@ -21,9 +23,9 @@ function Question9() {
             offset={0}
             duration={5000}
             onClick={handleclick}>
-            Oui
+            J'a-dore 🎄
           </Link></button>
-        <button className="question9__button">
+        <button className="question9__buttons question9__buttons--right">
           <Link
             activeClass="active"
             to=""
@@ -32,21 +34,12 @@ function Question9() {
             offset={0}
             duration={5000}
             onClick={handleclick}>
-            Non
+            J'en peux plus 🤢
           </Link>
         </button>
+              </div>
       </section>
       <section className="question9__section">
-        <img
-          className="question9__image"
-          src="../../../assets/j'aimeNoel.webp"
-          alt="famille à noël"
-        />
-        <img
-          className="question9__image"
-          src="../../../assets/jaimePasNoel.jpg"
-          alt="livre et feux de cheminée"
-        />
       </section>
     </div>
   );

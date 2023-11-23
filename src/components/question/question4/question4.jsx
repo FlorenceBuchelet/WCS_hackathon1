@@ -11,8 +11,8 @@ function Question4() {
   return (
     <div className="question4">
       <section className="question4__section">
-        <h1>Dinde ou Choucroute ?</h1>
-        <button className="question4__button">
+        <h1 className="question4__title">Dinde ou Choucroute ?</h1>
+        <button className="question4__buttons question4__buttons--left">
           <Link
             activeClass="active"
             to="question1"
@@ -23,7 +23,7 @@ function Question4() {
             onClick={handleclick}>
             Dinde
           </Link></button>
-        <button className="question4__button">
+        <button className="question4__buttons question4__buttons--right">
           <Link
             activeClass="active"
             to="question5"
@@ -35,18 +35,6 @@ function Question4() {
             Choucroute
           </Link>
         </button>
-      </section>
-      <section className="question4__section">
-        <img
-          className="question4__image"
-          src="../../../assets/dinde.webp"
-          alt="famille à noël"
-        />
-        <img
-          className="question4__image"
-          src="../../../assets/choucroute.webp"
-          alt="livre et feux de cheminée"
-        />
       </section>
     </div>
   );

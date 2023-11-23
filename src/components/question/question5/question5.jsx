@@ -11,8 +11,9 @@ function Question5() {
   return (
     <div className="question5">
       <section className="question5__section">
-        <h1>Quelle est ta saison préférée ?</h1>
-        <button className="question5__button">
+        <h1 className="question5__title">Quelle est ta saison préférée ?</h1>
+          <div className="question5__buttons--container">
+        <button className="question5__buttons question5__buttons--printemps">
           <Link
             activeClass="active"
             to="question6"
@@ -24,7 +25,7 @@ function Question5() {
             Printemps
           </Link>
         </button>
-        <button className="question5__button">
+        <button className="question5__buttons question5__buttons--ete">
           <Link
             activeClass="active"
             to="question6"
@@ -36,7 +37,7 @@ function Question5() {
             Eté
           </Link>
         </button>
-        <button className="question5__button">
+        <button className="question5__buttons question5__buttons--automne">
           <Link
             activeClass="active"
             to="question6"
@@ -48,7 +49,7 @@ function Question5() {
             Automne
           </Link>
         </button>
-        <button className="question5__button">
+        <button className="question5__buttons question5__buttons--hiver">
           <Link
             activeClass="active"
             to="question1"
@@ -60,27 +61,8 @@ function Question5() {
             Hiver
           </Link>
         </button>
+        </div>
       </section>
-      <img
-        className="question5__image"
-        src="../../../assets/pintemps.jpeg"
-        alt="tableau d'un adoubement"
-      />
-            <img
-        className="question5__image"
-        src="../../../assets/Ete.webp"
-        alt="tableau d'un adoubement"
-      />
-            <img
-        className="question5__image"
-        src="../../../assets/automne.avif"
-        alt="tableau d'un adoubement"
-      />
-            <img
-        className="question5__image"
-        src="../../../assets/hiver.jpg"
-        alt="tableau d'un adoubement"
-      />
     </div>
   );
 }
