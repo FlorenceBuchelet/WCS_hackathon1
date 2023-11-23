@@ -1,6 +1,6 @@
 import { Link, animateScroll as scroll } from "react-scroll";
-import './question2.scss'
-function Question2() {
+import './Question7.scss'
+function Question7() {
     const handleclick = () => {
         console.log("enter handleCLick");
         setTimeout(() => {
@@ -8,11 +8,22 @@ function Question2() {
         }, 5000);
       };
       return (
-        <div className="question2">
-          <section className="question2__section">
-            <h1>Aimes-tu Die Hard</h1>
-            <button className="question2__button">
+        <div className="question7">
+          <section className="question7__section">
+            <h1>As-tu déjà raté l'avion ?</h1>
+            <button className="question7__button">
             <Link
+                activeClass="active"
+                to="question8"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={5000}
+                onClick={handleclick}>
+                Oui
+              </Link></button>
+            <button className="question7__button">
+              <Link
                 activeClass="active"
                 to="question1"
                 spy={true}
@@ -20,25 +31,14 @@ function Question2() {
                 offset={0}
                 duration={5000}
                 onClick={handleclick}>
-                oui
-              </Link></button>
-            <button className="question2__button">
-              <Link
-                activeClass="active"
-                to="robotQuestion"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={5000}
-                onClick={handleclick}>
-                non
+                Non
               </Link>
             </button>
           </section>
-          <section className="question2__section">
+          <section className="question7__section">
             <img
-              className="question2__image"
-              src="../../../assets/DieHard.jpg"
+              className="question7__image"
+              src="../../../assets/MamaJaiRateLavion.jpg"
               alt="famille à noël"
             />
           </section>
@@ -46,4 +46,4 @@ function Question2() {
       );
 }
 
-export default Question2;
+export default Question7;

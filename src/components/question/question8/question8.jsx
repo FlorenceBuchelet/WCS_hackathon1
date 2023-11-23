@@ -1,6 +1,6 @@
 import { Link, animateScroll as scroll } from "react-scroll";
-import './question2.scss'
-function Question2() {
+import './question8.scss'
+function Question8() {
     const handleclick = () => {
         console.log("enter handleCLick");
         setTimeout(() => {
@@ -8,10 +8,10 @@ function Question2() {
         }, 5000);
       };
       return (
-        <div className="question2">
-          <section className="question2__section">
-            <h1>Aimes-tu Die Hard</h1>
-            <button className="question2__button">
+        <div className="question8">
+          <section className="question8__section">
+            <h1>Bambi ou Grinch ?</h1>
+            <button className="question8__button">
             <Link
                 activeClass="active"
                 to="question1"
@@ -20,25 +20,30 @@ function Question2() {
                 offset={0}
                 duration={5000}
                 onClick={handleclick}>
-                oui
+                Bambi
               </Link></button>
-            <button className="question2__button">
+            <button className="question8__button">
               <Link
                 activeClass="active"
-                to="robotQuestion"
+                to="question9"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={5000}
                 onClick={handleclick}>
-                non
+                Grinch
               </Link>
             </button>
           </section>
-          <section className="question2__section">
+          <section className="question8__section">
             <img
-              className="question2__image"
-              src="../../../assets/DieHard.jpg"
+              className="question8__image"
+              src="../../../assets/bambi.jpg"
+              alt="famille à noël"
+            />
+            <img
+              className="question8__image"
+              src="../../../assets/grinch.jpg"
               alt="famille à noël"
             />
           </section>
@@ -46,4 +51,4 @@ function Question2() {
       );
 }
 
-export default Question2;
+export default Question8;
