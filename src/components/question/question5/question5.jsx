@@ -1,12 +1,27 @@
 import "./question5.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-function Question5() {
-  const handleclick = () => {
-    console.log("enter handleCLick");
+function Question5({ count, setCount, nextPos, setNextPos }) {
+  const scrollTo = () => {
+    scroll.scrollTo(nextPos);
+  };
+  const handleclickGood = () => {
+    console.log("nextPos avant inc Q1", nextPos);
+    setNextPos(nextPos + 750);
+    console.log("nextPos apres inc Q1", nextPos);
+    setCount(count + 1);
     setTimeout(() => {
       console.log("after timeout");
-    }, 5000);
+      scrollTo();
+    }, 100);
+  };
+  const handleclickWrong = () => {
+    setNextPos(750);
+    setCount(1);
+    setTimeout(() => {
+      console.log("after timeout");
+      scrollTo();
+    }, 100);
   };
   return (
     <div className="question5">
@@ -15,36 +30,39 @@ function Question5() {
         <button className="question5__button">
           <Link
             activeClass="active"
-            to="question6"
+            /* to="question6" */
             spy={true}
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}>
+            onClick={handleclickGood}
+          >
             Printemps
           </Link>
         </button>
         <button className="question5__button">
           <Link
             activeClass="active"
-            to="question6"
+            /* to="question6" */
             spy={true}
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}>
+            onClick={handleclickGood}
+          >
             Eté
           </Link>
         </button>
         <button className="question5__button">
           <Link
             activeClass="active"
-            to="question6"
+            /*  to="question6" */
             spy={true}
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}>
+            onClick={handleclickGood}
+          >
             Automne
           </Link>
         </button>
@@ -56,7 +74,8 @@ function Question5() {
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}>
+            onClick={handleclickWrong}
+          >
             Hiver
           </Link>
         </button>
@@ -66,17 +85,17 @@ function Question5() {
         src="../../../assets/pintemps.jpeg"
         alt="tableau d'un adoubement"
       />
-            <img
+      <img
         className="question5__image"
         src="../../../assets/Ete.webp"
         alt="tableau d'un adoubement"
       />
-            <img
+      <img
         className="question5__image"
         src="../../../assets/automne.avif"
         alt="tableau d'un adoubement"
       />
-            <img
+      <img
         className="question5__image"
         src="../../../assets/hiver.jpg"
         alt="tableau d'un adoubement"
@@ -84,6 +103,5 @@ function Question5() {
     </div>
   );
 }
-
 
 export default Question5;

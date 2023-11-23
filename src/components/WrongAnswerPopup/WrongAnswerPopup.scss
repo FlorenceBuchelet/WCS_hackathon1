@@ -17,13 +17,31 @@ $font-color-2: black;
   padding: 1vw;
   display: flex;
   flex-direction: column;
-  transition: o;
-  align-items: center;
+  transition: opacity 1s;
+  position: absolute;
+  left: 40%;
+  top: 40%;
 }
 .WrongAnswerPopup__closeButton {
   background-color: red;
-  width: 60%;
-  /*  position: absolute;
-  top: 95%;
-  right: 95%; */
+}
+.active {
+  opacity: 1;
+}
+.hidden {
+  display: none;
+}
+.notActive {
+  animation: myAnim 1s cubic-bezier(0.64, 0, 0.78, 0) 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(1000px) rotate(10000deg);
+  }
 }
