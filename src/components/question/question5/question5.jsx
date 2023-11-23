@@ -1,7 +1,7 @@
 import "./question5.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-function Question5() {
+function Question5({ count, setCount }) {
   const handleclick = () => {
     console.log("enter handleCLick");
     setTimeout(() => {
@@ -20,7 +20,8 @@ function Question5() {
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}>
+            onClick={handleclick}
+          >
             Printemps
           </Link>
         </button>
@@ -32,7 +33,8 @@ function Question5() {
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}>
+            onClick={handleclick}
+          >
             Eté
           </Link>
         </button>
@@ -44,7 +46,8 @@ function Question5() {
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}>
+            onClick={handleclick}
+          >
             Automne
           </Link>
         </button>
@@ -56,7 +59,8 @@ function Question5() {
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}>
+            onClick={handleclick}
+          >
             Hiver
           </Link>
         </button>
@@ -66,17 +70,17 @@ function Question5() {
         src="../../../assets/pintemps.jpeg"
         alt="tableau d'un adoubement"
       />
-            <img
+      <img
         className="question5__image"
         src="../../../assets/Ete.webp"
         alt="tableau d'un adoubement"
       />
-            <img
+      <img
         className="question5__image"
         src="../../../assets/automne.avif"
         alt="tableau d'un adoubement"
       />
-            <img
+      <img
         className="question5__image"
         src="../../../assets/hiver.jpg"
         alt="tableau d'un adoubement"
@@ -84,6 +88,5 @@ function Question5() {
     </div>
   );
 }
-
 
 export default Question5;

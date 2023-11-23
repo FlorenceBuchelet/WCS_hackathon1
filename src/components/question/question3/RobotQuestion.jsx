@@ -1,12 +1,12 @@
 import "./RobotQuestion.scss";
 import { Link } from "react-scroll";
 
-function RobotQuestion() {
+function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
   const handleclick = () => {
     console.log("enter handleCLick");
     setTimeout(() => {
       console.log("after timeout");
-    }, 5000);
+    }, 100);
   };
   return (
     <div className="robotQuestion">
@@ -16,121 +16,138 @@ function RobotQuestion() {
           <h3>Êtes-vous humain ?</h3>
         </div>
         <div className="robotQuestion__grid">
-          <Link activeClass="active"
+          <Link
+            activeClass="active"
             to="question1"
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={100}
             onClick={handleclick}
-            className="robotQuestion__answer--wrong">
+            className="robotQuestion__answer--wrong"
+          >
             <img
               src="src/assets/sapins/sapin4.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
           </Link>
-          <Link activeClass="active"
+          <Link
+            activeClass="active"
             to="question1"
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
-            onClick={handleclick} 
-            className="robotQuestion__answer--wrong">
+            duration={100}
+            onClick={handleclick}
+            className="robotQuestion__answer--wrong"
+          >
             <img
               src="src/assets/sapins/sapin3.jpeg"
               alt=""
               className="robotQuestion__grid--img"
             />
           </Link>
-          <Link to="question1"
+          <Link
+            to="question1"
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={100}
             onClick={handleclick}
-            className="robotQuestion__answer--wrong">
+            className="robotQuestion__answer--wrong"
+          >
             <img
               src="src/assets/sapins/sapin1.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
           </Link>
-          <Link to="question1"
+          <Link
+            to="question1"
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={100}
             onClick={handleclick}
-            className="robotQuestion__answer--wrong">
+            className="robotQuestion__answer--wrong"
+          >
             <img
               src="src/assets/sapins/sapin7.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
           </Link>
-          <Link to="question1"
+          <Link
+            to="question1"
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={100}
             onClick={handleclick}
-            className="robotQuestion__answer--wrong">
+            className="robotQuestion__answer--wrong"
+          >
             <img
               src="src/assets/sapins/sapin5.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
           </Link>
-          <Link to="question1"
+          <Link
+            to="question1"
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={100}
             onClick={handleclick}
-            className="robotQuestion__answer--wrong">
+            className="robotQuestion__answer--wrong"
+          >
             <img
               src="src/assets/sapins/sapin2.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
           </Link>
-          <Link 
+          <Link
             activeClass="active"
             to="question4"
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={100}
             onClick={handleclick}
-            className="robotQuestion__answer--right">
+            className="robotQuestion__answer--right"
+          >
             <img
               src="src/assets/sapins/burningsapin.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
           </Link>
-          <Link to="question1"
+          <Link
+            to="question1"
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={100}
             onClick={handleclick}
-            className="robotQuestion__answer--wrong">
+            className="robotQuestion__answer--wrong"
+          >
             <img
               src="src/assets/sapins/sapin6.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
           </Link>
-          <Link to="question1"
+          <Link
+            to="question1"
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={100}
             onClick={handleclick}
-            className="robotQuestion__answer--wrong">
+            className="robotQuestion__answer--wrong"
+          >
             <img
               src="src/assets/sapins/sapin8.jpg"
               alt=""

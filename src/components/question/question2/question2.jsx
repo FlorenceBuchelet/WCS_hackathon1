@@ -1,11 +1,25 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./question2.scss";
-function Question2() {
-  const handleclick = () => {
-    console.log("enter handleCLick");
+function Question2({ count, setCount, nextPos, setNextPos }) {
+  const scrollTo = () => {
+    scroll.scrollTo(nextPos);
+  };
+  const handleclickGood = () => {
+    console.log("q2:", nextPos);
+    setNextPos(nextPos + 750);
+    console.log("nextPosQ2 vers q3inc:", nextPos);
+    setCount(count + 1);
     setTimeout(() => {
       console.log("after timeout");
-    }, 5000);
+      scrollTo();
+    }, 100);
+  };
+  const handleclickWrong = () => {
+    setCount(1);
+    setTimeout(() => {
+      console.log("after timeout");
+      scrollTo();
+    }, 100);
   };
   return (
     <div className="question2">
@@ -19,7 +33,7 @@ function Question2() {
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}
+            onClick={handleclickWrong}
           >
             oui
           </Link>
@@ -27,12 +41,12 @@ function Question2() {
         <button className="question2__button">
           <Link
             activeClass="active"
-            to="robotQuestion"
+            /*  to="robotQuestion" */
             spy={true}
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}
+            onClick={handleclickGood}
           >
             non
           </Link>

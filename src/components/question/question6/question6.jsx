@@ -1,7 +1,7 @@
 import "./Question6.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-function Question6() {
+function Question6({ count, setCount }) {
   const handleclick = () => {
     console.log("enter handleCLick");
     setTimeout(() => {
@@ -13,16 +13,18 @@ function Question6() {
       <section className="question6__section">
         <h1>Mariah Carey ?</h1>
         <button className="question6__button">
-        <Link
+          <Link
             activeClass="active"
             to="question1"
             spy={true}
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}>
+            onClick={handleclick}
+          >
             Oui
-          </Link></button>
+          </Link>
+        </button>
         <button className="question6__button">
           <Link
             activeClass="active"
@@ -31,7 +33,8 @@ function Question6() {
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}>
+            onClick={handleclick}
+          >
             Non
           </Link>
         </button>
