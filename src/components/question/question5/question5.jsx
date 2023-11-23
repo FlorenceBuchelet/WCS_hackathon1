@@ -33,7 +33,7 @@ function Question5() {
             offset={0}
             duration={5000}
             onClick={handleclick}>
-            Ete
+            Eté
           </Link>
         </button>
         <button className="question5__button">
