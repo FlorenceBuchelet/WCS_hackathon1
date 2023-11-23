@@ -1,12 +1,26 @@
 import "./question4.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-function Question4({ count, setCount }) {
-  const handleclick = () => {
-    console.log("enter handleCLick");
+function Question4({ count, setCount, nextPos, setNextPos }) {
+  const scrollTo = () => {
+    scroll.scrollTo(nextPos);
+  };
+  const handleclickGood = () => {
+    console.log("nextPos avant inc Q1", nextPos);
+    setNextPos(nextPos + 750);
+    console.log("nextPos apres inc Q1", nextPos);
+    setCount(count + 1);
     setTimeout(() => {
       console.log("after timeout");
-    }, 5000);
+      scrollTo();
+    }, 100);
+  };
+  const handleclickWrong = () => {
+    setCount(1);
+    setTimeout(() => {
+      console.log("after timeout");
+      scrollTo();
+    }, 100);
   };
   return (
     <div className="question4">
@@ -20,7 +34,7 @@ function Question4({ count, setCount }) {
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}
+            onClick={handleclickWrong}
           >
             Dinde
           </Link>
@@ -28,12 +42,12 @@ function Question4({ count, setCount }) {
         <button className="question4__button">
           <Link
             activeClass="active"
-            to="question5"
+            /* to="question5" */
             spy={true}
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}
+            onClick={handleclickGood}
           >
             Choucroute
           </Link>

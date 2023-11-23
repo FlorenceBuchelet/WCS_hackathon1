@@ -1,11 +1,25 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./question8.scss";
-function Question8({ count, setCount }) {
-  const handleclick = () => {
-    console.log("enter handleCLick");
+function Question8({ count, setCount, nextPos, setNextPos }) {
+  const scrollTo = () => {
+    scroll.scrollTo(nextPos);
+  };
+  const handleclickGood = () => {
+    console.log("nextPos avant inc Q1", nextPos);
+    setNextPos(nextPos + 750);
+    console.log("nextPos apres inc Q1", nextPos);
+    setCount(count + 1);
     setTimeout(() => {
       console.log("after timeout");
-    }, 5000);
+      scrollTo();
+    }, 100);
+  };
+  const handleclickWrong = () => {
+    setCount(1);
+    setTimeout(() => {
+      console.log("after timeout");
+      scrollTo();
+    }, 100);
   };
   return (
     <div className="question8">
@@ -19,7 +33,7 @@ function Question8({ count, setCount }) {
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}
+            onClick={handleclickWrong}
           >
             Bambi
           </Link>
@@ -27,12 +41,12 @@ function Question8({ count, setCount }) {
         <button className="question8__button">
           <Link
             activeClass="active"
-            to="question9"
+            /* to="question9" */
             spy={true}
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}
+            onClick={handleclickGood}
           >
             Grinch
           </Link>

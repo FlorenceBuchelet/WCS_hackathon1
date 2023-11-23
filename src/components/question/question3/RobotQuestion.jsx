@@ -1,11 +1,25 @@
 import "./RobotQuestion.scss";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
-  const handleclick = () => {
-    console.log("enter handleCLick");
+  const scrollTo = () => {
+    scroll.scrollTo(nextPos);
+  };
+  const handleclickGood = () => {
+    console.log("nextPos avant inc Q1", nextPos);
+    setNextPos(nextPos + 750);
+    console.log("nextPos apres inc Q1", nextPos);
+    setCount(count + 1);
     setTimeout(() => {
       console.log("after timeout");
+      scrollTo();
+    }, 100);
+  };
+  const handleclickWrong = () => {
+    setCount(1);
+    setTimeout(() => {
+      console.log("after timeout");
+      scrollTo();
     }, 100);
   };
   return (
@@ -23,7 +37,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             smooth={true}
             offset={0}
             duration={100}
-            onClick={handleclick}
+            onClick={handleclickWrong}
             className="robotQuestion__answer--wrong"
           >
             <img
@@ -39,7 +53,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             smooth={true}
             offset={0}
             duration={100}
-            onClick={handleclick}
+            onClick={handleclickWrong}
             className="robotQuestion__answer--wrong"
           >
             <img
@@ -54,7 +68,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             smooth={true}
             offset={0}
             duration={100}
-            onClick={handleclick}
+            onClick={handleclickWrong}
             className="robotQuestion__answer--wrong"
           >
             <img
@@ -69,7 +83,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             smooth={true}
             offset={0}
             duration={100}
-            onClick={handleclick}
+            onClick={handleclickWrong}
             className="robotQuestion__answer--wrong"
           >
             <img
@@ -84,7 +98,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             smooth={true}
             offset={0}
             duration={100}
-            onClick={handleclick}
+            onClick={handleclickWrong}
             className="robotQuestion__answer--wrong"
           >
             <img
@@ -99,7 +113,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             smooth={true}
             offset={0}
             duration={100}
-            onClick={handleclick}
+            onClick={handleclickWrong}
             className="robotQuestion__answer--wrong"
           >
             <img
@@ -110,12 +124,12 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
           </Link>
           <Link
             activeClass="active"
-            to="question4"
+            /* to="question4" */
             spy={true}
             smooth={true}
             offset={0}
             duration={100}
-            onClick={handleclick}
+            onClick={handleclickGood}
             className="robotQuestion__answer--right"
           >
             <img
@@ -130,7 +144,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             smooth={true}
             offset={0}
             duration={100}
-            onClick={handleclick}
+            onClick={handleclickWrong}
             className="robotQuestion__answer--wrong"
           >
             <img
@@ -145,7 +159,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             smooth={true}
             offset={0}
             duration={100}
-            onClick={handleclick}
+            onClick={handleclickWrong}
             className="robotQuestion__answer--wrong"
           >
             <img

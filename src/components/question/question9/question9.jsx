@@ -1,12 +1,26 @@
 import "./question9.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-function Question9({ count, setCount }) {
-  const handleclick = () => {
-    console.log("enter handleCLick");
+function Question9({ count, setCount, nextPos, setNextPos }) {
+  const scrollTo = () => {
+    scroll.scrollTo(nextPos);
+  };
+  const handleclickGood = () => {
+    console.log("nextPos avant inc Q1", nextPos);
+    setNextPos(nextPos + 750);
+    console.log("nextPos apres inc Q1", nextPos);
+    setCount(count + 1);
     setTimeout(() => {
       console.log("after timeout");
-    }, 5000);
+      scrollTo();
+    }, 100);
+  };
+  const handleclickWrong = () => {
+    setCount(1);
+    setTimeout(() => {
+      console.log("after timeout");
+      scrollTo();
+    }, 100);
   };
   return (
     <div className="question9">
@@ -20,7 +34,7 @@ function Question9({ count, setCount }) {
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}
+            onClick={handleclickWrong}
           >
             Oui
           </Link>
@@ -33,7 +47,7 @@ function Question9({ count, setCount }) {
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}
+            onClick={handleclickGood}
           >
             Non
           </Link>

@@ -1,20 +1,34 @@
+// variables ici
+$background-color: #010d24;
+$bauble-color-red: #8b1111;
+$bauble-color-bleu: #4ea0bb;
+$bauble-color-vert: #1b603f;
+$bauble-color-grey: #d9d9d9;
+$bauble-color-white: #ffff;
+$decoration-color: #ffd15c;
+$font-family: Arial, Helvetica, sans-serif;
+$font-color-1: white;
+$font-color-2: black;
+// fin des variables
+
+// variable locale
 $robotBlue: rgb(0, 165, 247);
 
 .robotQuestion {
   background-color: aquamarine;
-  padding: 2%;
-  width: 60%;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  max-height: 100%;
 }
 
 .robotQuestion__container {
   background-color: white;
-  max-width: 50%;
+  max-width: 40%;
   padding: 0.5rem;
   border: 1px solid lightgray;
+  max-height: 100%;
 }
 
 .robotQuestion__title {
@@ -37,14 +51,14 @@ $robotBlue: rgb(0, 165, 247);
 
 .robotQuestion__grid--img {
   width: 100%;
-  transition: transform .1s;
+  transition: transform 0.1s;
   cursor: pointer;
 }
 
 .robotQuestion__grid--img:hover {
-    border: 5px solid $robotBlue;
-    transform: scale(110%);
-    cursor: pointer;
+  border: 5px solid $robotBlue;
+  transform: scale(110%);
+  cursor: pointer;
 }
 
 .robotQuestion__footer--img {

@@ -55,15 +55,19 @@ function Question1({ count, setCount, nextPos, setNextPos }) {
   };
   return (
     <div className="question1">
+      <h1 className="question1__title">Mais en es-tu digne ?</h1>
+      <img
+        className="question1__image"
+        src="../../assets/adoubement.jpg"
+        alt="tableau d'un adoubement"
+      />
       <section className="question1__section">
-        <h1>En es-tu digne ?</h1>
-        {/*         <a onClick={scrollTo}>Scroll to 100px from the top</a> */}
-        <button className="question1__button">
+        <button className="question1__buttons">
           <Link
             onClick={handleclickGood}
             /*   delay={300} */
             activeClass="active"
-            to="question2"
+            /* to="question2" */
             spy={true}
             smooth={true}
             offset={0}
@@ -72,7 +76,7 @@ function Question1({ count, setCount, nextPos, setNextPos }) {
             Oui
           </Link>
         </button>
-        <button className="question1__button">
+        <button className="question1__buttons">
           <Link
             activeClass="active"
             to=""
@@ -83,15 +87,10 @@ function Question1({ count, setCount, nextPos, setNextPos }) {
             /*    delay={30} */
             onClick={handleclickWrong}
           >
-            non
+            Nope, vive Noël !!
           </Link>
         </button>
       </section>
-      <img
-        className="question1__image"
-        src="../../assets/adoubement.jpg"
-        alt="tableau d'un adoubement"
-      />
     </div>
   );
 }
