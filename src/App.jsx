@@ -1,12 +1,10 @@
 import "./App.scss";
-import Homepage from "./pages/Homepage/Homepage";
-import Questions from "./pages/Questions/Questions";
+import Question1 from "./components/question/question 1/question1";
 
 function App() {
   return (
     <>
-      {/* <Homepage /> */}
-      <Questions />
+      <Question1 />
     </>
   );
 }
