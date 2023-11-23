@@ -37,38 +37,4 @@ $font-color-2: black;
 }
 
 //neige
-.snow {
-	position: relative;
-	margin: 0 auto;
-	width : 100%;
-	height: 1000vh;
-}
- 
-.s-large,
-.s-small {
-	position : absolute;
-	top: 0; right: 0; bottom: 0; left: 0;
-}
- 
-.s-large {
-	background: url("https://www.creativejuiz.fr/blog/doc/snow-animation-css3/particules_large.png") repeat 0px 0px;
-	-webkit-animation: neige-tombe 20s linear infinite;
-	     -o-animation: neige-tombe 20s linear infinite;
-	        animation: neige-tombe 20s linear infinite;
-}
 
-.s-small {
-	background: url("https://www.creativejuiz.fr/blog/doc/snow-animation-css3/particules_medium.png") repeat 0px 0px;
-	-webkit-animation: neige-tombe 35s linear infinite;
-	     -o-animation: neige-tombe 35s linear infinite;
-	        animation: neige-tombe 35s linear infinite;
-}
- 
-@-webkit-keyframes neige-tombe {
-	from {background-position: 0 0;}
-	to {background-position: 0 100%;}
-}
-@keyframes neige-tombe {
-	from {background-position: 0 0;}
-	to {background-position: 0 100%;}
-}

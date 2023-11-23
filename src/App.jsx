@@ -7,6 +7,8 @@ function App() {
   return (
     <>
       <Questions />
+      <div className="s-large"></div>
+      <div className="s-small"></div>
     </>
   );
 }
