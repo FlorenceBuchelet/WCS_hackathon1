@@ -3,10 +3,11 @@ import Homepage from "./pages/Homepage/Homepage";
 import Questions from "./pages/Questions/Questions";
 
 function App() {
+  
   return (
     <>
-      {/* <Homepage /> */}
-      <Questions />
+      <Homepage /> 
+      {/* <Questions /> */}
     </>
   );
 }
