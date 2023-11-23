@@ -13,12 +13,9 @@ $font-color-2: black;
 
 .questions {
   background-color: green;
-  position: absolute;
-  width: 96%;
-  height: 96%;
-  padding: 2%;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .questions__left {

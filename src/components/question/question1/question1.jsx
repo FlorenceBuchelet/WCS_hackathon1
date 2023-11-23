@@ -11,8 +11,8 @@ function Question1() {
   return (
     <div className="question1">
       <section className="question1__section">
-        <h1 className="question1__title">En es-tu digne ?</h1>
-        <button className="question1__buttons">
+        <h1>En es-tu digne ?</h1>
+        <button className="question1__button">
           <Link
             activeClass="active"
             to="question2"
@@ -24,7 +24,17 @@ function Question1() {
             Oui
           </Link>
         </button>
-        <button className="question1__buttons">Non</button>
+        <button className="question1__button">
+          <Link
+            activeClass="active"
+            to=""
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={5000}
+            onClick={handleclick}>
+            non
+          </Link></button>
       </section>
       <img
         className="question1__image"
