@@ -1,11 +1,12 @@
+import "./neige.scss";
 import "./App.scss";
-import Questions from "./pages/Questions/Questions";
 
+import Questions from "./pages/Questions/Questions";
 
 function App() {
   return (
     <>
-<Questions />
+      <Questions />
     </>
   );
 }
