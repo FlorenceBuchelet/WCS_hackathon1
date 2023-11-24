@@ -27,21 +27,25 @@ function Question6({ count, setCount, nextPos, setNextPos }) {
   return (
     <div className="question6">
       <section className="question6__section">
-        <h1>Mariah Carey ?</h1>
-        <button className="question6__button">
-          <Link
+        <h1 className="question6__title">Mariah Carey ?</h1>
+          <img
+            className="question6__image"
+            src="../../../assets/MariahCarrey.webp"
+            alt="famille à noël"
+          />
+          <div className="question6__buttons--container">
+        <button className="question6__buttons">
+        <Link
             activeClass="active"
             to="question1"
             spy={true}
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclickWrong}
-          >
-            Oui
-          </Link>
-        </button>
-        <button className="question6__button">
+            onClick={handleclickWrong}>
+            OuiiiHiii 🎶
+          </Link></button>
+        <button className="question6__buttons">
           <Link
             activeClass="active"
             /* to="question7" */
@@ -51,16 +55,10 @@ function Question6({ count, setCount, nextPos, setNextPos }) {
             duration={5000}
             onClick={handleclickGood}
           >
-            Non
+            Nononono 👂
           </Link>
         </button>
-      </section>
-      <section className="question6__section">
-        <img
-          className="question6__image"
-          src="../../../assets/MariahCarrey.webp"
-          alt="famille à noël"
-        />
+          </div>
       </section>
     </div>
   );

@@ -31,40 +31,41 @@ function Question2({ count, setCount, nextPos, setNextPos }) {
       <div></div>
       {show && <WrongAnswerPopup />}
       <section className="question2__section">
-        <h1>Aimes-tu Die Hard</h1>
-        <button className="question2__button">
-          <Link
-            activeClass="active"
-            to="question1"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={5000}
-            onClick={handleclickWrong}
-          >
-            oui
-          </Link>
-        </button>
-        <button className="question2__button">
-          <Link
-            activeClass="active"
-            /*  to="robotQuestion" */
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={5000}
-            onClick={handleclickGood}
-          >
-            non
-          </Link>
-        </button>
-      </section>
-      <section className="question2__section">
+        <h1 className="question2__title">Aimes-tu Die Hard ?</h1>
         <img
           className="question2__image"
           src="../../../assets/DieHard.jpg"
           alt="famille à noël"
         />
+        <div className="question2__buttons--container">
+
+          <button className="question2__buttons">
+            <Link
+              activeClass="active"
+              to="question1"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={2000}
+              onClick={handleclickWrong}
+            >
+              Yippee ki-yay !
+            </Link>
+          </button>
+          <button className="question2__buttons">
+            <Link
+              activeClass="active"
+              /*  to="robotQuestion" */
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={2000}
+              onClick={handleclickGood}
+            >
+              Non.
+            </Link>
+          </button>
+        </div>
       </section>
     </div>
   );

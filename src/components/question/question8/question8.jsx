@@ -25,45 +25,35 @@ function Question8({ count, setCount, nextPos, setNextPos }) {
   return (
     <div className="question8">
       <section className="question8__section">
-        <h1>Bambi ou Grinch ?</h1>
-        <button className="question8__button">
+        <h1 className="question8__title">Bambi ou Grinch ?</h1>
+        <div className="question8__buttons--container">
+
           <Link
+            className="question8__buttons question8__buttons--left"
             activeClass="active"
             to="question1"
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={2000}
             onClick={handleclickWrong}
           >
-            Bambi
           </Link>
-        </button>
-        <button className="question8__button">
+
+
           <Link
+            className="question8__buttons question8__buttons--right"
             activeClass="active"
             /* to="question9" */
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={2000}
             onClick={handleclickGood}
           >
-            Grinch
           </Link>
-        </button>
-      </section>
-      <section className="question8__section">
-        <img
-          className="question8__image"
-          src="../../../assets/bambi.jpg"
-          alt="famille à noël"
-        />
-        <img
-          className="question8__image"
-          src="../../../assets/grinch.jpg"
-          alt="famille à noël"
-        />
+
+        </div>
       </section>
     </div>
   );

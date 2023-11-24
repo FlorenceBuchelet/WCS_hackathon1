@@ -1,0 +1,94 @@
+// variables ici
+$background-color: #010d24;
+$bauble-color-red: #8b1111;
+$bauble-color-bleu: #4ea0bb;
+$bauble-color-vert: #1b603f;
+$bauble-color-grey: #d9d9d9;
+$bauble-color-white: #ffff;
+$decoration-color: #ffd15c;
+$font-family: Arial, Helvetica, sans-serif;
+$font-color-1: white;
+$font-color-2: black;
+// fin des variables
+
+.question5 {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 750px;
+}
+
+.question5__section {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.question5__image {
+  height: 450px;
+}
+
+.question5__title {
+  padding: 2%;
+  margin-block-end: 5px;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 2.5rem;
+}
+
+.question5__buttons {
+  width: 400px;
+  height: 200px;
+  border-radius: 20%;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: bold;
+  text-shadow:
+    0px 5px 0 rgb(0, 0, 0),
+    0px -5px 0 rgb(0, 0, 0),
+    5px 0px 0 rgb(0, 0, 0),
+    -5px 0px 0 rgb(0, 0, 0),
+    5px 5px 0 rgb(0, 0, 0),
+    5px -5px 0 rgb(0, 0, 0),
+    -5px 5px 0 rgb(0, 0, 0),
+    -5px -5px 0 rgb(0, 0, 0),
+    0px 5px 0 rgb(0, 0, 0),
+    0px -5px 0 rgb(0, 0, 0),
+    5px 0px 0 rgb(0, 0, 0),
+    -5px 0px 0 rgb(0, 0, 0),
+    5px 5px 0 rgb(0, 0, 0),
+    5px -5px 0 rgb(0, 0, 0),
+    -5px 5px 0 rgb(0, 0, 0),
+    -5px -5px 0 rgb(0, 0, 0);
+}
+
+.question5__buttons--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.question5__buttons--printemps {
+    background-image: url("../../../assets/pintemps.jpeg");
+    background-size: cover;
+}
+
+.question5__buttons--ete {
+    background-image: url("../../../assets/Ete.webp");
+    background-size: cover;
+}
+
+.question5__buttons--automne {
+    background-image: url("../../../assets/automne.avif");
+    background-size: cover;
+}
+
+.question5__buttons--hiver {
+    background-image: url("../../../assets/hiver.jpg");
+    background-size: cover;
+}
