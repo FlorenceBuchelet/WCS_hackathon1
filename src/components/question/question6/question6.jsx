@@ -25,15 +25,15 @@ function Question6({ count, setCount, nextPos, setNextPos, show, setShow }) {
   return (
     <div className="question6">
       <section className="question6__section">
-        <h1 className="question6__title">Mariah Carey ?</h1>
-        <img
-          className="question__image"
-          src="../../../assets/MariahCarrey.webp"
-          alt="famille à noël"
-        />
-        <div className="question6__buttons--container">
-          <Link
-            className="question__buttons"
+        <h1 className="question__title">Mariah Carey ?</h1>
+          <img
+            className="question__image"
+            src="../../../assets/MariahCarrey.webp"
+            alt="famille à noël"
+          />
+          <div className="question6__buttons--container">
+        <Link
+        className="question__buttons"
             activeClass="active"
             to="question1"
             spy={true}

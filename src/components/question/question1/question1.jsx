@@ -25,7 +25,7 @@ function Question1({ count, setCount, nextPos, setNextPos, show, setShow }) {
   };
   return (
     <div className="question1">
-      <h1 className="question1__title">Mais en es-tu digne ?</h1>
+      <h1 className="question__title">Mais en es-tu digne ?</h1>
       <img
         className="question__image"
         src="../../assets/adoubement.jpg"

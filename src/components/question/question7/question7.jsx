@@ -24,15 +24,16 @@ function Question7({ count, setCount, nextPos, setNextPos, show, setShow }) {
   return (
     <div className="question7">
       <section className="question7__section">
-        <h1 className="question7__title">As-tu déjà raté l'avion ?</h1>
+        <h1 className="question__title">As-tu déjà raté l'avion ?</h1>
         <img
-          className="question7__image"
+          className="question__image"
           src="../../../assets/MamaJaiRateLavion.jpg"
           alt="famille à noël"
         />
         <div className="question7__buttons--container">
-          <button className="question__buttons">
+
             <Link
+            className="question__buttons"
               activeClass="active"
               /* to="question8" */
               spy={true}
@@ -43,9 +44,8 @@ function Question7({ count, setCount, nextPos, setNextPos, show, setShow }) {
             >
               Oui
             </Link>
-          </button>
-          <button className="question__buttons">
             <Link
+            className="question__buttons"
               activeClass="active"
               to="question1"
               spy={true}
@@ -56,7 +56,7 @@ function Question7({ count, setCount, nextPos, setNextPos, show, setShow }) {
             >
               Non
             </Link>
-          </button>
+
         </div>
       </section>
     </div>
