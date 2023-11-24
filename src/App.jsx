@@ -1,7 +1,7 @@
 import "./App.scss";
-import WrongAnswerPopup from "./components/WrongAnswerPopup/WrongAnswerPopup";
 import Questions from "./pages/Questions/Questions";
 import Homepage from "./pages/Homepage/Homepage";
+import "./components/neige/Neige";
 
 function App() {
   return (
@@ -12,6 +12,8 @@ function App() {
       <section className="App__question">
         <Questions />
       </section>
+      <div className="s-large"></div>
+      <div className="s-small"></div>
     </>
   );
 }
