@@ -35,9 +35,10 @@ function Question1({ count, setCount, nextPos, setNextPos, show, setShow }) {
         alt="tableau d'un adoubement"
       />
       <section className="question1__section">
-        <button className="question1__buttons">
+
           <Link
             onClick={handleclickGood}
+            className="question1__buttons"
             /*   delay={300} */
             activeClass="active"
             /* to="question2" */
@@ -48,9 +49,8 @@ function Question1({ count, setCount, nextPos, setNextPos, show, setShow }) {
           >
             Oui
           </Link>
-        </button>
-        <button className="question1__buttons">
           <Link
+          className="question1__buttons"
             activeClass="active"
             to=""
             spy={true}
@@ -62,7 +62,6 @@ function Question1({ count, setCount, nextPos, setNextPos, show, setShow }) {
           >
             Nope, vive Noël !!
           </Link>
-        </button>
       </section>
     </div>
   );
