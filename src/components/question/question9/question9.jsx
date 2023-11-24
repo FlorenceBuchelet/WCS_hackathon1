@@ -17,7 +17,7 @@ function Question9({ count, setCount, nextPos, setNextPos, show, setShow }) {
   };
   const handleclickWrong = () => {
     setTimeout(() => {
-      setNextPos(750);
+      setNextPos(1725);
       setCount(1);
       setShow(true);
     }, 2000);
@@ -34,9 +34,8 @@ function Question9({ count, setCount, nextPos, setNextPos, show, setShow }) {
               spy={true}
               smooth={true}
               offset={0}
-              duration={5000}
-              onClick={handleclickWrong}
-            >
+              duration={2000}
+              onClick={handleclickWrong}>
               J'a-dore 🎄
             </Link>
           </button>
@@ -47,9 +46,8 @@ function Question9({ count, setCount, nextPos, setNextPos, show, setShow }) {
               spy={true}
               smooth={true}
               offset={0}
-              duration={5000}
-              onClick={handleclickGood}
-            >
+              duration={2000}
+              onClick={handleclickGood}>
               J'en peux plus 🤢
             </Link>
           </button>

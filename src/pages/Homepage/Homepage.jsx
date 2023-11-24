@@ -7,7 +7,7 @@ import Baubles_4 from "../../components/baubles/Baubles_4";
 import { Link, animateScroll as scroll } from "react-scroll";
 function Homepage() {
   const scrollTo = () => {
-    scroll.scrollTo(900);
+    scroll.scrollTo(975);
   };
   return (
     <main className="homepage">

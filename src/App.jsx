@@ -6,16 +6,12 @@ import Homepage from "./pages/Homepage/Homepage";
 function App() {
   return (
     <>
-    <section className="App__home">
-      <Homepage />
+      <section className="App__home">
+        <Homepage />
       </section>
-        <section className="App__question">
-          <Questions />
-        </section>
-{/*       <div className="snow">
-        <div className="s-large"></div>
-        <div className="s-small"></div> 
-       </div> */}
+      <section className="App__question">
+        <Questions />
+      </section>
     </>
   );
 }
