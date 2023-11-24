@@ -9,6 +9,7 @@ $decoration-color: #ffd15c;
 $font-family: Arial, Helvetica, sans-serif;
 $font-color-1: white;
 $font-color-2: black;
+$border: 7px double $decoration-color;
 // fin des variables
 
 .question1 {
@@ -26,10 +27,6 @@ $font-color-2: black;
   gap: 10px;
 }
 
-.question1__image {
-  height: 450px;
-}
-
 .question1__title {
   padding: 2%;
   margin-block-end: 5px;
@@ -44,28 +41,17 @@ $font-color-2: black;
   border-radius: 20px;
   margin-block-start: 15px;
   font-size: 2.5rem;
-  background-image: url("public/assets/tinsel3.jpg");
+  background-image: url("public/assets/tinsel3white.jpg");
   color: white;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 7px double $decoration-color;
-  text-shadow:
-    0px 5px 0 rgb(0, 0, 0),
-    0px -5px 0 rgb(0, 0, 0),
-    5px 0px 0 rgb(0, 0, 0),
-    -5px 0px 0 rgb(0, 0, 0),
-    5px 5px 0 rgb(0, 0, 0),
-    5px -5px 0 rgb(0, 0, 0),
-    -5px 5px 0 rgb(0, 0, 0),
-    -5px -5px 0 rgb(0, 0, 0),
-    0px 5px 0 rgb(0, 0, 0),
-    0px -5px 0 rgb(0, 0, 0),
-    5px 0px 0 rgb(0, 0, 0),
-    -5px 0px 0 rgb(0, 0, 0),
-    5px 5px 0 rgb(0, 0, 0),
-    5px -5px 0 rgb(0, 0, 0),
-    -5px 5px 0 rgb(0, 0, 0),
-    -5px -5px 0 rgb(0, 0, 0);
+  border: $border;
+  text-shadow: 0px 5px 0 rgb(0, 0, 0), 0px -5px 0 rgb(0, 0, 0),
+    5px 0px 0 rgb(0, 0, 0), -5px 0px 0 rgb(0, 0, 0), 5px 5px 0 rgb(0, 0, 0),
+    5px -5px 0 rgb(0, 0, 0), -5px 5px 0 rgb(0, 0, 0), -5px -5px 0 rgb(0, 0, 0),
+    0px 5px 0 rgb(0, 0, 0), 0px -5px 0 rgb(0, 0, 0), 5px 0px 0 rgb(0, 0, 0),
+    -5px 0px 0 rgb(0, 0, 0), 5px 5px 0 rgb(0, 0, 0), 5px -5px 0 rgb(0, 0, 0),
+    -5px 5px 0 rgb(0, 0, 0), -5px -5px 0 rgb(0, 0, 0);
 }

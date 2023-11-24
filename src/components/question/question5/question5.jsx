@@ -28,8 +28,9 @@ function Question5({ count, setCount, nextPos, setNextPos }) {
       <section className="question5__section">
         <h1 className="question5__title">Quelle est ta saison préférée ?</h1>
           <div className="question5__buttons--container">
-        <button className="question5__buttons question5__buttons--printemps">
+  
           <Link
+          className="question__buttons--wide-button question5__buttons--printemps"
             activeClass="active"
             /* to="question6" */
             spy={true}
@@ -38,11 +39,11 @@ function Question5({ count, setCount, nextPos, setNextPos }) {
             duration={2000}
             onClick={handleclickGood}
           >
-            Printemps
+            
           </Link>
-        </button>
-        <button className="question5__buttons question5__buttons--ete">
+    
           <Link
+          className="question__buttons--wide-button question5__buttons--ete"
             activeClass="active"
             /* to="question6" */
             spy={true}
@@ -51,11 +52,11 @@ function Question5({ count, setCount, nextPos, setNextPos }) {
             duration={2000}
             onClick={handleclickGood}
           >
-            Eté
+            
           </Link>
-        </button>
-        <button className="question5__buttons question5__buttons--automne">
+
           <Link
+          className="question__buttons--wide-button question5__buttons--automne"
             activeClass="active"
             /*  to="question6" */
             spy={true}
@@ -64,11 +65,11 @@ function Question5({ count, setCount, nextPos, setNextPos }) {
             duration={2000}
             onClick={handleclickGood}
           >
-            Automne
+            
           </Link>
-        </button>
-        <button className="question5__buttons question5__buttons--hiver">
+  
           <Link
+          className="question__buttons--wide-button question5__buttons--hiver"
             activeClass="active"
             to="question1"
             spy={true}
@@ -77,9 +78,9 @@ function Question5({ count, setCount, nextPos, setNextPos }) {
             duration={2000}
             onClick={handleclickWrong}
           >
-            Hiver
+            
           </Link>
-        </button>
+   
         </div>
       </section>
     </div>

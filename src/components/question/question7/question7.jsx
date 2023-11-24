@@ -33,7 +33,7 @@ function Question7({ count, setCount, nextPos, setNextPos }) {
         />
         <div className="question7__buttons--container">
 
-          <button className="question7__buttons">
+          <button className="question__buttons">
             <Link
               activeClass="active"
               /* to="question8" */
@@ -46,7 +46,7 @@ function Question7({ count, setCount, nextPos, setNextPos }) {
               Oui
             </Link>
           </button>
-          <button className="question7__buttons">
+          <button className="question__buttons">
             <Link
               activeClass="active"
               to="question1"
@@ -60,8 +60,6 @@ function Question7({ count, setCount, nextPos, setNextPos }) {
             </Link>
           </button>
         </div>
-      </section>
-      <section className="question7__section">
       </section>
     </div>
   );

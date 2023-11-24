@@ -30,13 +30,13 @@ function Question2({ count, setCount, nextPos, setNextPos, setShow, show }) {
       <section className="question2__section">
         <h1 className="question2__title">Aimes-tu Die Hard ?</h1>
         <img
-          className="question2__image"
+          className="question__image"
           src="../../../assets/DieHard.jpg"
           alt="famille à noël"
         />
         <div className="question2__buttons--container">
-          <button className="question2__buttons">
             <Link
+            className="question__buttons"
               activeClass="active"
               to="question1"
               spy={true}
@@ -47,9 +47,8 @@ function Question2({ count, setCount, nextPos, setNextPos, setShow, show }) {
             >
               Yippee ki-yay !
             </Link>
-          </button>
-          <button className="question2__buttons">
             <Link
+            className="question__buttons"
               activeClass="active"
               /*  to="robotQuestion" */
               spy={true}
@@ -60,7 +59,6 @@ function Question2({ count, setCount, nextPos, setNextPos, setShow, show }) {
             >
               Non.
             </Link>
-          </button>
         </div>
       </section>
     </div>

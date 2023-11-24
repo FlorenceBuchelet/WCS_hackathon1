@@ -29,13 +29,13 @@ function Question6({ count, setCount, nextPos, setNextPos }) {
       <section className="question6__section">
         <h1 className="question6__title">Mariah Carey ?</h1>
           <img
-            className="question6__image"
+            className="question__image"
             src="../../../assets/MariahCarrey.webp"
             alt="famille à noël"
           />
           <div className="question6__buttons--container">
-        <button className="question6__buttons">
         <Link
+        className="question__buttons"
             activeClass="active"
             to="question1"
             spy={true}
@@ -44,9 +44,10 @@ function Question6({ count, setCount, nextPos, setNextPos }) {
             duration={5000}
             onClick={handleclickWrong}>
             OuiiiHiii 🎶
-          </Link></button>
-        <button className="question6__buttons">
+          </Link>
+        
           <Link
+          className="question__buttons"
             activeClass="active"
             /* to="question7" */
             spy={true}
@@ -57,7 +58,7 @@ function Question6({ count, setCount, nextPos, setNextPos }) {
           >
             Nononono 👂
           </Link>
-        </button>
+      
           </div>
       </section>
     </div>
