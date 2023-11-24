@@ -17,6 +17,7 @@ function Question7({ count, setCount, nextPos, setNextPos, show, setShow }) {
   const handleclickWrong = () => {
     setTimeout(() => {
       setNextPos(1725);
+      setNextPos(1725);
       setCount(1);
       setShow(true);
     }, 2000);
@@ -31,32 +32,30 @@ function Question7({ count, setCount, nextPos, setNextPos, show, setShow }) {
           alt="famille à noël"
         />
         <div className="question7__buttons--container">
-
-            <Link
+          <Link
             className="question__buttons"
-              activeClass="active"
-              /* to="question8" */
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={5000}
-              onClick={handleclickGood}
-            >
-              Jamais.
-            </Link>
-            <Link
+            activeClass="active"
+            /* to="question8" */
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={2000}
+            onClick={handleclickGood}
+          >
+            Jamais.
+          </Link>
+          <Link
             className="question__buttons"
-              activeClass="active"
-              to="question1"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={5000}
-              onClick={handleclickWrong}
-            >
-              Tout le temps !!
-            </Link>
-
+            activeClass="active"
+            to="question1"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={2000}
+            onClick={handleclickWrong}
+          >
+            Tout le temps !!
+          </Link>
         </div>
       </section>
     </div>

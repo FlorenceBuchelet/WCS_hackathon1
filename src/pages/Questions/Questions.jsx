@@ -16,7 +16,7 @@ import Excuse from "../../components/excuse/Excuse";
 function Questions() {
   const [show, setShow] = useState(false);
   const [count, setCount] = useState(1);
-  const [nextPos, setNextPos] = useState(1500);
+  const [nextPos, setNextPos] = useState(1725);
   return (
     <div className="questions">
       <aside className="questions__right">
@@ -31,16 +31,8 @@ function Questions() {
             setShow={setShow}
           />
         )}
-        {count >= 9 && (
-          <Question9
-            setCount={setCount}
-            count={count}
-            nextPos={nextPos}
-            setNextPos={setNextPos}
-          />
-        )}
         {count >= 2 && (
-          <Question2
+          <Question9
             setCount={setCount}
             count={count}
             nextPos={nextPos}
@@ -50,7 +42,7 @@ function Questions() {
           />
         )}
         {count >= 3 && (
-          <RobotQuestion
+          <Question2
             setCount={setCount}
             count={count}
             nextPos={nextPos}
@@ -60,7 +52,7 @@ function Questions() {
           />
         )}
         {count >= 4 && (
-          <Question4
+          <RobotQuestion
             setCount={setCount}
             count={count}
             nextPos={nextPos}
@@ -70,7 +62,7 @@ function Questions() {
           />
         )}
         {count >= 5 && (
-          <Question5
+          <Question4
             setCount={setCount}
             count={count}
             nextPos={nextPos}
@@ -80,7 +72,7 @@ function Questions() {
           />
         )}
         {count >= 6 && (
-          <Question6
+          <Question5
             setCount={setCount}
             count={count}
             nextPos={nextPos}
@@ -90,7 +82,7 @@ function Questions() {
           />
         )}
         {count >= 7 && (
-          <Question7
+          <Question6
             setCount={setCount}
             count={count}
             nextPos={nextPos}
@@ -100,6 +92,16 @@ function Questions() {
           />
         )}
         {count >= 8 && (
+          <Question7
+            setCount={setCount}
+            count={count}
+            nextPos={nextPos}
+            setNextPos={setNextPos}
+            show={show}
+            setShow={setShow}
+          />
+        )}
+        {count >= 9 && (
           <Question8
             setCount={setCount}
             count={count}
