@@ -14,7 +14,9 @@ $font-color-2:black;
 .baubles__chaine__baubles_3{
     width: 600px;
             height: 600px; 
-            background-color: $bauble-color-bleu;
+            background:radial-gradient(86.9% 82.58% at 53.85% 52.16%, #C0E7EF 1.05%, #1FACD9 30.73%, #154998 51.04%, #03263F 64.78%, rgba(193, 28, 28, 0.00) 100%, #FFF 100%);
+
+
             border-radius: 50%;
 }
 .baubles__chaine__baubles_img{
