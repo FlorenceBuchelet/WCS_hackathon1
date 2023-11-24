@@ -31,6 +31,14 @@ function Questions() {
             setShow={setShow}
           />
         )}
+                {count >= 9 && (
+          <Question9
+            setCount={setCount}
+            count={count}
+            nextPos={nextPos}
+            setNextPos={setNextPos}
+          />
+        )}
         {count >= 2 && (
           <Question2
             setCount={setCount}
@@ -89,14 +97,7 @@ function Questions() {
             setNextPos={setNextPos}
           />
         )}
-        {count >= 9 && (
-          <Question9
-            setCount={setCount}
-            count={count}
-            nextPos={nextPos}
-            setNextPos={setNextPos}
-          />
-        )}
+
       </aside>
     </div>
   );

@@ -37,7 +37,7 @@ $font-color-2: black;
   margin-block-end: 5px;
   max-width: 100%;
   max-height: 100%;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .question9__buttons--container {
@@ -50,9 +50,10 @@ $font-color-2: black;
   height: 440px;
   border-radius: 100%;
   margin-block-start: 15px;
-  font-size: 1.3rem;
+  font-size: 3.7rem;
   color: white;
   font-weight: bold;
+  border: 7px double $decoration-color;
   text-shadow:
     0px 5px 0 rgb(0, 0, 0),
     0px -5px 0 rgb(0, 0, 0),

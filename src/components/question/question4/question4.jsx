@@ -26,7 +26,7 @@ function Question4({ count, setCount, nextPos, setNextPos }) {
   return (
     <div className="question4">
       <section className="question4__section">
-        <h1 className="question4__title">Dinde ou Choucroute ?</h1>
+        <h1 className="question__title">Dinde ou Choucroute ?</h1>
  
           <Link
           className="question__buttons--wide-button question4__buttons--left"

@@ -28,7 +28,7 @@ function Question2({ count, setCount, nextPos, setNextPos, setShow, show }) {
     <div className="question2">
       {/*       {show && <WrongAnswerPopup />} */}
       <section className="question2__section">
-        <h1 className="question2__title">Aimes-tu Die Hard ?</h1>
+        <h1 className="question__title">Et Die Hard ?</h1>
         <img
           className="question__image"
           src="../../../assets/DieHard.jpg"

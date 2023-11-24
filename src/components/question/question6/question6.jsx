@@ -27,7 +27,7 @@ function Question6({ count, setCount, nextPos, setNextPos }) {
   return (
     <div className="question6">
       <section className="question6__section">
-        <h1 className="question6__title">Mariah Carey ?</h1>
+        <h1 className="question__title">Mariah Carey ?</h1>
           <img
             className="question__image"
             src="../../../assets/MariahCarrey.webp"
