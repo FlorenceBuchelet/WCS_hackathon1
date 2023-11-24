@@ -11,6 +11,7 @@ import Question9 from "../../components/question/question9/question9";
 
 import "./Questions.scss";
 import WrongAnswerPopup from "../../components/WrongAnswerPopup/WrongAnswerPopup";
+import Excuse from "../../components/excuse/Excuse";
 
 function Questions() {
   const [show, setShow] = useState(false);
@@ -30,7 +31,7 @@ function Questions() {
             setShow={setShow}
           />
         )}
-                {count >= 9 && (
+        {count >= 9 && (
           <Question9
             setCount={setCount}
             count={count}
@@ -108,7 +109,7 @@ function Questions() {
             setShow={setShow}
           />
         )}
-
+        {count >= 10 && <Excuse />}
       </aside>
     </div>
   );

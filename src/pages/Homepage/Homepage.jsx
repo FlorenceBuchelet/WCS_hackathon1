@@ -1,5 +1,5 @@
 import "./Homepage.scss";
-import Excuse from "../excuse/Excuse";
+import Excuse from "../../components/excuse/Excuse";
 import Baubles from "../../components/baubles/Baubles";
 import Baubles_1 from "../../components/baubles/Baubles_1";
 import Baubles_2 from "../../components/baubles/Baubles_2";
