@@ -17,7 +17,6 @@ function Questions() {
   /*   const [show, setShow] = useState("false"); */
   return (
     <div className="questions">
-      <h1 className="questions__title">Questions</h1>
       <aside className="questions__left">
         <h1 className="questions__title"></h1>
       </aside>
