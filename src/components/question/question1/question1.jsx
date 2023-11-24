@@ -16,52 +16,48 @@ function Question1({ count, setCount, nextPos, setNextPos, show, setShow }) {
     }, 100);
   };
   const handleclickWrong = () => {
-    console.log("enter handleclickwrong");
-    setNextPos(750);
-    setCount(1);
-    setShow(true);
-    console.log("show:", show);
+    console.log("handleClick Q1");
     setTimeout(() => {
-      console.log("after timeout");
-      scrollTo();
-    }, 100);
+      setNextPos(750);
+      setCount(1);
+      setShow(true);
+    }, 1);
   };
   return (
     <div className="question1">
-      <h1 className="question1__title">Mais en es-tu digne ?</h1>
+      <h1 className="question__title">Mais en es-tu digne ?</h1>
       <img
         className="question__image"
         src="../../assets/adoubement.jpg"
         alt="tableau d'un adoubement"
       />
       <section className="question1__section">
-
-          <Link
-            onClick={handleclickGood}
-            className="question__buttons"
-            /*   delay={300} */
-            activeClass="active"
-            /* to="question2" */
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={2000}
-          >
-            Évidemment
-          </Link>
-          <Link
+        <Link
+          onClick={handleclickGood}
           className="question__buttons"
-            activeClass="active"
-            to=""
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={2000}
-            /*    delay={30} */
-            onClick={handleclickWrong}
-          >
-            Nope, vive Noël !!
-          </Link>
+          /*   delay={300} */
+          activeClass="active"
+          /* to="question2" */
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={200}
+        >
+          Évidemment
+        </Link>
+        <Link
+          className="question__buttons"
+          activeClass="active"
+          to="question1"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={2000}
+          /*    delay={30} */
+          onClick={handleclickWrong}
+        >
+          Nope, vive Noël !!
+        </Link>
       </section>
     </div>
   );

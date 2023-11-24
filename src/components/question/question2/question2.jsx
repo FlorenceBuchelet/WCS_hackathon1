@@ -1,6 +1,5 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./question2.scss";
-import WrongAnswerPopup from "../../WrongAnswerPopup/WrongAnswerPopup";
 function Question2({ count, setCount, nextPos, setNextPos, setShow, show }) {
   const scrollTo = () => {
     scroll.scrollTo(nextPos);
@@ -16,49 +15,47 @@ function Question2({ count, setCount, nextPos, setNextPos, setShow, show }) {
     }, 100);
   };
   const handleclickWrong = () => {
-    setNextPos(750);
-    setCount(1);
-    setShow(!show);
     setTimeout(() => {
-      console.log("after timeout");
-      scrollTo();
-    }, 100);
+      setNextPos(750);
+      setCount(1);
+      setShow(true);
+    }, 2000);
   };
   return (
     <div className="question2">
       {/*       {show && <WrongAnswerPopup />} */}
       <section className="question2__section">
-        <h1 className="question2__title">Aimes-tu Die Hard ?</h1>
+        <h1 className="question__title">Et Die Hard ?</h1>
         <img
           className="question__image"
           src="../../../assets/DieHard.jpg"
           alt="famille à noël"
         />
         <div className="question2__buttons--container">
-            <Link
+          <Link
             className="question__buttons"
-              activeClass="active"
-              to="question1"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={2000}
-              onClick={handleclickWrong}
-            >
-              Yippee ki-yay !
-            </Link>
-            <Link
+            activeClass="active"
+            to="question1"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={2000}
+            onClick={handleclickWrong}
+          >
+            Yippee ki-yay !
+          </Link>
+          <Link
             className="question__buttons"
-              activeClass="active"
-              /*  to="robotQuestion" */
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={2000}
-              onClick={handleclickGood}
-            >
-              Non.
-            </Link>
+            activeClass="active"
+            /*  to="robotQuestion" */
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={2000}
+            onClick={handleclickGood}
+          >
+            Non.
+          </Link>
         </div>
       </section>
     </div>

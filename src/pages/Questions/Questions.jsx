@@ -15,8 +15,7 @@ import WrongAnswerPopup from "../../components/WrongAnswerPopup/WrongAnswerPopup
 function Questions() {
   const [show, setShow] = useState(false);
   const [count, setCount] = useState(1);
-  const [nextPos, setNextPos] = useState(750);
-  /*   const [show, setShow] = useState("false"); */
+  const [nextPos, setNextPos] = useState(1500);
   return (
     <div className="questions">
       <aside className="questions__right">
@@ -29,6 +28,14 @@ function Questions() {
             setNextPos={setNextPos}
             show={show}
             setShow={setShow}
+          />
+        )}
+                {count >= 9 && (
+          <Question9
+            setCount={setCount}
+            count={count}
+            nextPos={nextPos}
+            setNextPos={setNextPos}
           />
         )}
         {count >= 2 && (
@@ -47,6 +54,8 @@ function Questions() {
             count={count}
             nextPos={nextPos}
             setNextPos={setNextPos}
+            show={show}
+            setShow={setShow}
           />
         )}
         {count >= 4 && (
@@ -55,6 +64,8 @@ function Questions() {
             count={count}
             nextPos={nextPos}
             setNextPos={setNextPos}
+            show={show}
+            setShow={setShow}
           />
         )}
         {count >= 5 && (
@@ -63,6 +74,8 @@ function Questions() {
             count={count}
             nextPos={nextPos}
             setNextPos={setNextPos}
+            show={show}
+            setShow={setShow}
           />
         )}
         {count >= 6 && (
@@ -71,6 +84,8 @@ function Questions() {
             count={count}
             nextPos={nextPos}
             setNextPos={setNextPos}
+            show={show}
+            setShow={setShow}
           />
         )}
         {count >= 7 && (
@@ -79,6 +94,8 @@ function Questions() {
             count={count}
             nextPos={nextPos}
             setNextPos={setNextPos}
+            show={show}
+            setShow={setShow}
           />
         )}
         {count >= 8 && (
@@ -87,16 +104,11 @@ function Questions() {
             count={count}
             nextPos={nextPos}
             setNextPos={setNextPos}
+            show={show}
+            setShow={setShow}
           />
         )}
-        {count >= 9 && (
-          <Question9
-            setCount={setCount}
-            count={count}
-            nextPos={nextPos}
-            setNextPos={setNextPos}
-          />
-        )}
+
       </aside>
     </div>
   );
