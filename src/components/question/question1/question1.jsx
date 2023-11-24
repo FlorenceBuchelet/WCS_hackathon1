@@ -18,14 +18,14 @@ function Question1({ count, setCount, nextPos, setNextPos, show, setShow }) {
   const handleclickWrong = () => {
     console.log("handleClick Q1");
     setTimeout(() => {
-      setNextPos(750);
+      setNextPos(1700);
       setCount(1);
       setShow(true);
     }, 1);
   };
   return (
     <div className="question1">
-      <h1 className="question__title">Mais en es-tu digne ?</h1>
+      <h1 className="question__title">Mais en êtes-vous digne ?</h1>
       <img
         className="question__image"
         src="../../assets/adoubement.jpg"

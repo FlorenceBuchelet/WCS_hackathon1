@@ -113,7 +113,7 @@ $font-color-2: black;
     z-index: 10;
     align-items: end;
     position: absolute;
-    top: 29em;
+    top: 25em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,18 +121,26 @@ $font-color-2: black;
     padding: 0.5em;
     background-color: #388355;
     border: 7px double #ffd15c;
+    width: 50%;
+    text-align: center;
     .homepage__title {
       color: $bauble-color-white;
-      font-size: 2em;
-      margin: 1em;
+      font-size: 3em;
+      margin: 0.5em;
     }
     .homepage__button {
       border: 7px double #ffd15c;
       background-color: #6c0606;
       color: #ffffff;
       padding: 0.5em;
-      font-size: 2em;
-      border-radius: 20px;
+      padding-inline: 5rem;
+      font-size: 3em;
+      border-radius: 50px;
+      
+      border: 7px double $decoration-color;
     }
   }
+  
 }
+
+

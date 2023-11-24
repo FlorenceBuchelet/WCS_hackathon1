@@ -17,7 +17,7 @@ function Question5({ count, setCount, nextPos, setNextPos, show, setShow }) {
   };
   const handleclickWrong = () => {
     setTimeout(() => {
-      setNextPos(750);
+      setNextPos(1725);
       setCount(1);
       setShow(true);
     }, 2000);
@@ -25,7 +25,7 @@ function Question5({ count, setCount, nextPos, setNextPos, show, setShow }) {
   return (
     <div className="question5">
       <section className="question5__section">
-        <h1 className="question5__title">Quelle est ta saison préférée ?</h1>
+        <h1 className="question5__title">Quelle est votre saison préférée ?</h1>
         <div className="question5__buttons--container">
           <Link
             className="question__buttons--wide-button question5__buttons--printemps"

@@ -16,7 +16,7 @@ function Question7({ count, setCount, nextPos, setNextPos, show, setShow }) {
   };
   const handleclickWrong = () => {
     setTimeout(() => {
-      setNextPos(750);
+      setNextPos(1725);
       setCount(1);
       setShow(true);
     }, 2000);
@@ -24,7 +24,7 @@ function Question7({ count, setCount, nextPos, setNextPos, show, setShow }) {
   return (
     <div className="question7">
       <section className="question7__section">
-        <h1 className="question__title">As-tu déjà raté l'avion ?</h1>
+        <h1 className="question__title">Vous ratez souvent vos avions ?</h1>
         <img
           className="question__image"
           src="../../../assets/MamaJaiRateLavion.jpg"
@@ -42,7 +42,7 @@ function Question7({ count, setCount, nextPos, setNextPos, show, setShow }) {
               duration={5000}
               onClick={handleclickGood}
             >
-              Oui
+              Jamais.
             </Link>
             <Link
             className="question__buttons"
@@ -54,7 +54,7 @@ function Question7({ count, setCount, nextPos, setNextPos, show, setShow }) {
               duration={5000}
               onClick={handleclickWrong}
             >
-              Non
+              Tout le temps !!
             </Link>
 
         </div>

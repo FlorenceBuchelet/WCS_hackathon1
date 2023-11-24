@@ -7,7 +7,7 @@ import Baubles_4 from "../../components/baubles/Baubles_4";
 import { Link, animateScroll as scroll } from "react-scroll";
 function Homepage() {
   const scrollTo = () => {
-    scroll.scrollTo(900);
+    scroll.scrollTo(975);
   };
   return (
     <main className="homepage">
@@ -30,11 +30,11 @@ function Homepage() {
       </section>
       <section className="homepage__text">
         <h1 className="homepage__title">
-          Tu les veux les meilleurs excuses pour ne pas fêter Noël ??
+          Nous avons les meilleures excuses pour éviter Noël. Vous les voulez ?
         </h1>
         {/*cool button*/}
         <button className="homepage__button" onClick={scrollTo}>
-          Click ici !
+          Oh oui !!!
         </button>
       </section>
     </main>
