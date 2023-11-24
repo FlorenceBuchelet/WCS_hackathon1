@@ -31,11 +31,11 @@ function Homepage() {
       </section>
       <section className="homepage__text">
         <h1 className="homepage__title">
-          Tu les veux les meilleurs excuses pour ne pas fêter Noël ??
+          Nous avons les meilleures excuses pour éviter Noël. Vous les voulez ?
         </h1>
         {/*cool button*/}
         <button className="homepage__button" onClick={scrollTo}>
-          Click ici !
+          Oh oui !!!
         </button>
       </section>
     </main>
