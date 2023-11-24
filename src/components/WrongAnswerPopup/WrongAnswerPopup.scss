@@ -13,18 +13,35 @@ $font-color-2: black;
 
 .WrongAnswerPopup {
   z-index: 999;
-  border: 20px ridge #87ff50;
-  background: #e3c3c3;
+  border: 7px double #ffd15c;
+  background: #6d0808;
   padding: 1vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
   transition: opacity 1s;
   position: absolute;
-  left: 40%;
-  top: 40%;
+  left: 32%;
+  top: 30%;
+  border-radius: 20px;
+  padding: 1em;
+  font-size: 2em;
+ p{
+  color: #ffd15c;
+ }
+  h1 {
+    // font-size: 2em;
+    // color: #ffd15c;
+  }
 }
 .WrongAnswerPopup__closeButton {
-  background-color: red;
+  font-size: 1em;
+  margin: 0.5em;
+  background-color: rgb(238, 164, 125);
+  padding: 0.5em;
+  border-radius: 10px;
+  border: 7px double #ffd15c;
+  // color:#ffd15c;
 }
 .active {
   opacity: 1;
