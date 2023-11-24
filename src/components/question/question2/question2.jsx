@@ -19,7 +19,7 @@ function Question2({ count, setCount, nextPos, setNextPos, setShow, show }) {
       setNextPos(1725);
       setCount(1);
       setShow(true);
-    }, 2000);
+    }, 2100);
   };
   return (
     <div className="question2">
