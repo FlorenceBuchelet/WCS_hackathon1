@@ -21,26 +21,37 @@ $font-color-2: black;
   align-items: center;
   transition: opacity 1s;
   position: absolute;
-  left: 32%;
+  left: 22%;
   top: 30%;
   border-radius: 20px;
   padding: 1em;
   font-size: 2em;
+  box-shadow: -1px 5px 33px 12px #131313;
  p{
   color: #ffd15c;
+  font-size: 1.5em;
  }
   h1 {
-    // font-size: 2em;
+    font-size: 2em;
     // color: #ffd15c;
   }
 }
 .WrongAnswerPopup__closeButton {
-  font-size: 1em;
+  font-size: 1.5em;
+  width: 700px;
   margin: 0.5em;
   background-color: rgb(238, 164, 125);
   padding: 0.5em;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 7px double #ffd15c;
+  background-image: url("public/assets/tinsel3white.jpg");
+  text-shadow: 0px 5px 0 rgb(0, 0, 0), 0px -5px 0 rgb(0, 0, 0),
+  5px 0px 0 rgb(0, 0, 0), -5px 0px 0 rgb(0, 0, 0), 5px 5px 0 rgb(0, 0, 0),
+  5px -5px 0 rgb(0, 0, 0), -5px 5px 0 rgb(0, 0, 0), -5px -5px 0 rgb(0, 0, 0),
+  0px 5px 0 rgb(0, 0, 0), 0px -5px 0 rgb(0, 0, 0), 5px 0px 0 rgb(0, 0, 0),
+  -5px 0px 0 rgb(0, 0, 0), 5px 5px 0 rgb(0, 0, 0), 5px -5px 0 rgb(0, 0, 0),
+  -5px 5px 0 rgb(0, 0, 0), -5px -5px 0 rgb(0, 0, 0);
+  font-weight: bold;
   // color:#ffd15c;
 }
 .active {

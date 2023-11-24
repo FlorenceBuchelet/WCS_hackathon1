@@ -15,7 +15,9 @@ function WrongAnswerPopup({ show, setShow }) {
         <h1>Mauvaise réponse !!</h1>
        
         <p> Tu détestes réellement noël ?</p>
-        <button className="WrongAnswerPopup__closeButton" onClick={handleClick}>
+        <button className="WrongAnswerPopup__closeButton" onClick={handleClick} 
+        // className="question__buttons "
+        >
           Je vous jure, je déteste Noël !!
         </button>
       </section>
