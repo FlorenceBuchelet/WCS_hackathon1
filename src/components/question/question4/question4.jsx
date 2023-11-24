@@ -27,8 +27,9 @@ function Question4({ count, setCount, nextPos, setNextPos }) {
     <div className="question4">
       <section className="question4__section">
         <h1 className="question4__title">Dinde ou Choucroute ?</h1>
-        <button className="question4__buttons question4__buttons--left">
+ 
           <Link
+          className="question__buttons--wide-button question4__buttons--left"
             activeClass="active"
             to="question1"
             spy={true}
@@ -37,11 +38,12 @@ function Question4({ count, setCount, nextPos, setNextPos }) {
             duration={2000}
             onClick={handleclickWrong}
           >
-            Dinde
+            
           </Link>
-        </button>
-        <button className="question4__buttons question4__buttons--right">
+  
+     
           <Link
+          className="question__buttons--wide-button question4__buttons--right"
             activeClass="active"
             /* to="question5" */
             spy={true}
@@ -50,9 +52,9 @@ function Question4({ count, setCount, nextPos, setNextPos }) {
             duration={2000}
             onClick={handleclickGood}
           >
-            Choucroute
+            
           </Link>
-        </button>
+    
       </section>
     </div>
   );

@@ -30,7 +30,7 @@ function Question1({ count, setCount, nextPos, setNextPos, show, setShow }) {
     <div className="question1">
       <h1 className="question1__title">Mais en es-tu digne ?</h1>
       <img
-        className="question1__image"
+        className="question__image"
         src="../../assets/adoubement.jpg"
         alt="tableau d'un adoubement"
       />
@@ -38,7 +38,7 @@ function Question1({ count, setCount, nextPos, setNextPos, show, setShow }) {
 
           <Link
             onClick={handleclickGood}
-            className="question1__buttons"
+            className="question__buttons"
             /*   delay={300} */
             activeClass="active"
             /* to="question2" */
@@ -47,10 +47,10 @@ function Question1({ count, setCount, nextPos, setNextPos, show, setShow }) {
             offset={0}
             duration={2000}
           >
-            Oui
+            Évidemment
           </Link>
           <Link
-          className="question1__buttons"
+          className="question__buttons"
             activeClass="active"
             to=""
             spy={true}
