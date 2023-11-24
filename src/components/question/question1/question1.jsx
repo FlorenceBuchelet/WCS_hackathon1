@@ -1,13 +1,5 @@
 import "./question1.scss";
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-} from "react-scroll";
-import { useEffect } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 function Question1({ count, setCount, nextPos, setNextPos, show, setShow }) {
   const scrollTo = () => {
     scroll.scrollTo(nextPos);
