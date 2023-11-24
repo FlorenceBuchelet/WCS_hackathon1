@@ -11,6 +11,11 @@ $font-family: Arial, Helvetica, sans-serif;
 $font-color-1: white;
 $font-color-2: black;
 //fin des variables
+
+body {
+  background-color: $background-color;
+  padding: 2%;
+}
 * {
   font-family: "Mountains of Christmas", serif;
 }
