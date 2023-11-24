@@ -85,7 +85,7 @@ function Baubles_3() {
           </div>
         </article>
         <div className="baubles__chaine__baubles_3"></div>
-        <img className="baubles__chaine__baubles_img" src="~/public/assets/bauble.png"/>
+        <img className="baubles__chaine__baubles_img" src="public\assets\bauble.png"/>
       </article>
 
     </>
