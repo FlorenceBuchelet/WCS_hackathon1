@@ -10,8 +10,10 @@ import Question8 from "../../components/question/question8/question8";
 import Question9 from "../../components/question/question9/question9";
 
 import "./Questions.scss";
+import WrongAnswerPopup from "../../components/WrongAnswerPopup/WrongAnswerPopup";
 
 function Questions() {
+  const [show, setShow] = useState(false);
   const [count, setCount] = useState(1);
   const [nextPos, setNextPos] = useState(750);
   /*   const [show, setShow] = useState("false"); */
@@ -21,12 +23,15 @@ function Questions() {
         <h1 className="questions__title"></h1>
       </aside>
       <aside className="questions__right">
+        {show && <WrongAnswerPopup show={show} setShow={setShow} />}
         {count >= 1 && (
           <Question1
             setCount={setCount}
             count={count}
             nextPos={nextPos}
             setNextPos={setNextPos}
+            show={show}
+            setShow={setShow}
           />
         )}
         {count >= 2 && (
@@ -35,6 +40,8 @@ function Questions() {
             count={count}
             nextPos={nextPos}
             setNextPos={setNextPos}
+            show={show}
+            setShow={setShow}
           />
         )}
         {count >= 3 && (

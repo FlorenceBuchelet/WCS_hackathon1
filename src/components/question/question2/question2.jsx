@@ -1,12 +1,10 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./question2.scss";
-import { useState } from "react";
 import WrongAnswerPopup from "../../WrongAnswerPopup/WrongAnswerPopup";
-function Question2({ count, setCount, nextPos, setNextPos }) {
+function Question2({ count, setCount, nextPos, setNextPos, setShow, show }) {
   const scrollTo = () => {
     scroll.scrollTo(nextPos);
   };
-  const [show, setShow] = useState(false);
   const handleclickGood = () => {
     console.log("q2:", nextPos);
     setNextPos(nextPos + 750);
@@ -28,8 +26,7 @@ function Question2({ count, setCount, nextPos, setNextPos }) {
   };
   return (
     <div className="question2">
-      <div></div>
-      {show && <WrongAnswerPopup />}
+      {/*       {show && <WrongAnswerPopup />} */}
       <section className="question2__section">
         <h1 className="question2__title">Aimes-tu Die Hard ?</h1>
         <img
@@ -38,7 +35,6 @@ function Question2({ count, setCount, nextPos, setNextPos }) {
           alt="famille à noël"
         />
         <div className="question2__buttons--container">
-
           <button className="question2__buttons">
             <Link
               activeClass="active"
