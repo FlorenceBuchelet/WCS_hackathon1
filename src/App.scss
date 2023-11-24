@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap");
 // variables ici
-$background-color: #010d24;
+$background-color: #670101;
 $bauble-color-red: #8b1111;
 $bauble-color-bleu: #4ea0bb;
 $bauble-color-vert: #1b603f;
@@ -14,7 +14,9 @@ $font-color-2: black;
 
 body {
   background-color: $background-color;
-
+  border-block-start: 7px solid $decoration-color;
+background-image: url(../public/assets/tinsel3.jpg);
+  overflow-x: hidden;
 }
 * {
   font-family: Arial, Helvetica, sans-serif;

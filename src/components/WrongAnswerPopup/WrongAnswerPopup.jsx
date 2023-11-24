@@ -13,16 +13,16 @@ function WrongAnswerPopup() {
   };
   return (
     <div>
-      {/*  {show && ( */}
+    {show && ( 
       <section className={`WrongAnswerPopup ${isActive}`}>
         <h1>Mauvaise réponse !!</h1>
-        <p>Concentres toi ! Je me demande si tu détestes réellement noël</p>
-        <p>Je vous JURE, je déteste Noël </p>
+        <p>Concentre-toi ! Je me demande si tu détestes réellement noël.</p>
+        <p>Je vous JURE, je déteste Noël !!</p>
         <button className="WrongAnswerPopup__closeButton" onClick={handleClick}>
           Je veux réessayer !
         </button>
       </section>
-      {/*  )} */}
+    )} 
     </div>
   );
 }

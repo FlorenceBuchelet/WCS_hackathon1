@@ -19,9 +19,6 @@ function Questions() {
   /*   const [show, setShow] = useState("false"); */
   return (
     <div className="questions">
-      <aside className="questions__left">
-        <h1 className="questions__title"></h1>
-      </aside>
       <aside className="questions__right">
         {show && <WrongAnswerPopup show={show} setShow={setShow} />}
         {count >= 1 && (
@@ -100,8 +97,6 @@ function Questions() {
             setNextPos={setNextPos}
           />
         )}
-        <div className="s-large"></div>
-        <div className="s-small"></div>
       </aside>
     </div>
   );
