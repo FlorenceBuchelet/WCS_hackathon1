@@ -113,21 +113,26 @@ $font-color-2: black;
     z-index: 10;
     align-items: end;
     position: absolute;
-    top: 25em;
+    top: 29em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 20px;
+    padding: 0.5em;
+background-color: #04173bf7;;
+border: 7px double #ffd15c;
     .homepage__title {
       color: $bauble-color-white;
-      /*  font-family: $font-family; */
-      margin: 2em;
+      font-size: 2em;
+      margin: 1em;
     }
     .homepage__button {
-      background-color: black;
+      background-color:rgb(145, 26, 26);
       color: #d9d9d9;
       padding: 0.5em;
       font-size: 2em;
       border-radius: 20px;
+      border: none;
     }
   }
 }
