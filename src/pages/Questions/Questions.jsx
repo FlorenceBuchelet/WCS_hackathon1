@@ -15,7 +15,7 @@ import WrongAnswerPopup from "../../components/WrongAnswerPopup/WrongAnswerPopup
 function Questions() {
   const [show, setShow] = useState(false);
   const [count, setCount] = useState(1);
-  const [nextPos, setNextPos] = useState(1500);
+  const [nextPos, setNextPos] = useState(1725);
   return (
     <div className="questions">
       <aside className="questions__right">

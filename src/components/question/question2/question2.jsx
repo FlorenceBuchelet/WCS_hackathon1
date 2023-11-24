@@ -16,7 +16,7 @@ function Question2({ count, setCount, nextPos, setNextPos, setShow, show }) {
   };
   const handleclickWrong = () => {
     setTimeout(() => {
-      setNextPos(750);
+      setNextPos(1725);
       setCount(1);
       setShow(true);
     }, 2000);

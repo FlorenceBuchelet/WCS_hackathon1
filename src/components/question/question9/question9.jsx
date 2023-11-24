@@ -34,7 +34,7 @@ function Question9({ count, setCount, nextPos, setNextPos, show, setShow }) {
               spy={true}
               smooth={true}
               offset={0}
-              duration={5000}
+              duration={2000}
               onClick={handleclickWrong}
             >
               J'a-dore 🎄
@@ -47,7 +47,7 @@ function Question9({ count, setCount, nextPos, setNextPos, show, setShow }) {
               spy={true}
               smooth={true}
               offset={0}
-              duration={5000}
+              duration={2000}
               onClick={handleclickGood}
             >
               J'en peux plus 🤢
