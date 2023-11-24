@@ -4,11 +4,14 @@ function Excuse() {
   return (
     <section className="excuse">
       <h1 className="excuse__h1">Nos ultimes techniques pour éviter Noël.</h1>
+      <article className="excuse__E">
       {sorryArry.map((sorry) => (
-        <div key={sorry.index}>
-          <h3 className="excuse__h3">{sorry.excuse}</h3>
+        <div key="excuse__h3">
+          <h3 className={"excuse__h3"} id={`${sorry.index}`}>{`${sorry.index}- `}{sorry.excuse}</h3>
         </div>
+        
       ))}
+      </article>
     </section>
   );
 }

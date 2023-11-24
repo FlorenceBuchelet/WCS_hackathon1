@@ -1,11 +1,25 @@
-.excuse__h1 {
+.excuse {
   display: flex;
   justify-content: center;
-  font-size: 5em;
-  margin-bottom: 1em;
-}
-.excuse__h3 {
-  font-size: 2.5em;
-  margin-bottom: 1em;
- 
+  flex-wrap: wrap;
+  background-color: #6d0808;
+  border: 7px double #ffd15c;
+  .excuse__h1 {
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 1em;
+  }
+
+  .excuse__excuse{
+    display: flex;
+    width: 10em;
+
+  }
+  .excuse__h3 {
+    display: flex;
+    justify-content: center;
+  width: 20em;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+  }
 }
