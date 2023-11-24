@@ -26,9 +26,7 @@ function Question9({ count, setCount, nextPos, setNextPos, show, setShow }) {
   return (
     <div className="question9">
       <section className="question9__section">
-        <h1 className="question9__title">
-          Une facile : est-ce que vous aimez Noël ?
-        </h1>
+        <h1 className="question9__title">Est-ce que vous aimez Noël ?</h1>
         <div className="question9__buttons--container">
           <button className="question9__buttons question9__buttons--left">
             <Link
@@ -38,8 +36,7 @@ function Question9({ count, setCount, nextPos, setNextPos, show, setShow }) {
               smooth={true}
               offset={0}
               duration={2000}
-              onClick={handleclickWrong}
-            >
+              onClick={handleclickWrong}>
               J'a-dore 🎄
             </Link>
           </button>
@@ -51,8 +48,7 @@ function Question9({ count, setCount, nextPos, setNextPos, show, setShow }) {
               smooth={true}
               offset={0}
               duration={2000}
-              onClick={handleclickGood}
-            >
+              onClick={handleclickGood}>
               J'en peux plus 🤢
             </Link>
           </button>
