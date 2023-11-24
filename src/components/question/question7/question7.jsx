@@ -1,6 +1,6 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./Question7.scss";
-function Question7({ count, setCount, nextPos, setNextPos }) {
+function Question7({ count, setCount, nextPos, setNextPos, show, setShow }) {
   const scrollTo = () => {
     scroll.scrollTo(nextPos);
   };
@@ -15,12 +15,11 @@ function Question7({ count, setCount, nextPos, setNextPos }) {
     }, 100);
   };
   const handleclickWrong = () => {
-    setNextPos(750);
-    setCount(1);
     setTimeout(() => {
-      console.log("after timeout");
-      scrollTo();
-    }, 100);
+      setNextPos(750);
+      setCount(1);
+      setShow(true);
+    }, 2000);
   };
   return (
     <div className="question7">

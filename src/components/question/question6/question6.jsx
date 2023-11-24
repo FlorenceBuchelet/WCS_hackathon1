@@ -1,7 +1,7 @@
 import "./Question6.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-function Question6({ count, setCount, nextPos, setNextPos }) {
+function Question6({ count, setCount, nextPos, setNextPos, show, setShow }) {
   const scrollTo = () => {
     scroll.scrollTo(nextPos);
   };
@@ -16,13 +16,11 @@ function Question6({ count, setCount, nextPos, setNextPos }) {
     }, 100);
   };
   const handleclickWrong = () => {
-    setNextPos(750);
-    setCount(1);
-    setNextPos(750);
     setTimeout(() => {
-      console.log("after timeout");
-      scrollTo();
-    }, 100);
+      setNextPos(750);
+      setCount(1);
+      setShow(true);
+    }, 2000);
   };
   return (
     <div className="question6">
@@ -42,12 +40,13 @@ function Question6({ count, setCount, nextPos, setNextPos }) {
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclickWrong}>
+            onClick={handleclickWrong}
+          >
             OuiiiHiii 🎶
           </Link>
-        
+
           <Link
-          className="question__buttons"
+            className="question__buttons"
             activeClass="active"
             /* to="question7" */
             spy={true}
@@ -58,8 +57,7 @@ function Question6({ count, setCount, nextPos, setNextPos }) {
           >
             Nononono 👂
           </Link>
-      
-          </div>
+        </div>
       </section>
     </div>
   );
