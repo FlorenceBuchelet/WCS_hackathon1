@@ -1,0 +1,85 @@
+// variables ici
+$background-color: #010d24;
+$bauble-color-red: #8b1111;
+$bauble-color-bleu: #4ea0bb;
+$bauble-color-vert: #1b603f;
+$bauble-color-grey: #d9d9d9;
+$bauble-color-white: #ffff;
+$decoration-color: #ffd15c;
+$font-family: Arial, Helvetica, sans-serif;
+$font-color-1: white;
+$font-color-2: black;
+// fin des variables
+
+.question8 {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 750px;
+}
+
+.question8__section {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.question8__image {
+  height: 450px;
+}
+
+.question8__title {
+  padding: 2%;
+  margin-block-end: 5px;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 3rem;
+}
+
+.question8__buttons--container {
+    display: flex;
+    gap: 20px;
+}
+
+.question8__buttons {
+  width: 440px;
+  height: 440px;
+  border-radius: 100%;
+  margin-block-start: 15px;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: bold;
+  border: 7px double $decoration-color;
+  text-shadow:
+    0px 5px 0 rgb(0, 0, 0),
+    0px -5px 0 rgb(0, 0, 0),
+    5px 0px 0 rgb(0, 0, 0),
+    -5px 0px 0 rgb(0, 0, 0),
+    5px 5px 0 rgb(0, 0, 0),
+    5px -5px 0 rgb(0, 0, 0),
+    -5px 5px 0 rgb(0, 0, 0),
+    -5px -5px 0 rgb(0, 0, 0),
+    0px 5px 0 rgb(0, 0, 0),
+    0px -5px 0 rgb(0, 0, 0),
+    5px 0px 0 rgb(0, 0, 0),
+    -5px 0px 0 rgb(0, 0, 0),
+    5px 5px 0 rgb(0, 0, 0),
+    5px -5px 0 rgb(0, 0, 0),
+    -5px 5px 0 rgb(0, 0, 0),
+    -5px -5px 0 rgb(0, 0, 0);
+}
+
+
+.question8__buttons--left {
+    background-image: url("public/assets/course aux jouets.jpg");
+    background-size: cover;
+}
+
+.question8__buttons--right {
+    background-image: url("../../../assets/grinch.jpg");
+    background-size: cover;
+}

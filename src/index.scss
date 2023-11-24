@@ -1,0 +1,86 @@
+// variables ici
+$background-color: #010d24;
+$bauble-color-red: #8b1111;
+$bauble-color-bleu: #4ea0bb;
+$bauble-color-vert: #1b603f;
+$bauble-color-grey: #d9d9d9;
+$bauble-color-white: #ffff;
+$decoration-color: #ffd15c;
+$font-family: Arial, Helvetica, sans-serif;
+$font-color-1: white;
+$font-color-2: black;
+//fin des variables
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(assets/curseur.png), auto;
+}
+
+$border: 7px double $decoration-color;
+
+.question__image {
+    height: 450px;
+    border-radius: 100%;
+    border: $border;
+  }
+
+.question__buttons {
+  width: 400px;
+  height: 100px;
+  border-radius: 20px;
+  margin-block-start: 15px;
+  font-size: 2.5rem;
+  background-color:#4F0000 ;
+  background-image: url("public/assets/tinsel3white.jpg");
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: $border;
+  text-shadow: 0px 5px 0 rgb(0, 0, 0), 0px -5px 0 rgb(0, 0, 0),
+    5px 0px 0 rgb(0, 0, 0), -5px 0px 0 rgb(0, 0, 0), 5px 5px 0 rgb(0, 0, 0),
+    5px -5px 0 rgb(0, 0, 0), -5px 5px 0 rgb(0, 0, 0), -5px -5px 0 rgb(0, 0, 0),
+    0px 5px 0 rgb(0, 0, 0), 0px -5px 0 rgb(0, 0, 0), 5px 0px 0 rgb(0, 0, 0),
+    -5px 0px 0 rgb(0, 0, 0), 5px 5px 0 rgb(0, 0, 0), 5px -5px 0 rgb(0, 0, 0),
+    -5px 5px 0 rgb(0, 0, 0), -5px -5px 0 rgb(0, 0, 0);
+}
+
+.question__buttons--wide-button {
+    border-radius: 30px;
+    margin-block-start: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: $border;
+    background-position: center;
+    text-shadow:
+      0px 5px 0 rgb(0, 0, 0),
+      0px -5px 0 rgb(0, 0, 0),
+      5px 0px 0 rgb(0, 0, 0),
+      -5px 0px 0 rgb(0, 0, 0),
+      5px 5px 0 rgb(0, 0, 0),
+      5px -5px 0 rgb(0, 0, 0),
+      -5px 5px 0 rgb(0, 0, 0),
+      -5px -5px 0 rgb(0, 0, 0),
+      0px 5px 0 rgb(0, 0, 0),
+      0px -5px 0 rgb(0, 0, 0),
+      5px 0px 0 rgb(0, 0, 0),
+      -5px 0px 0 rgb(0, 0, 0),
+      5px 5px 0 rgb(0, 0, 0),
+      5px -5px 0 rgb(0, 0, 0),
+      -5px 5px 0 rgb(0, 0, 0),
+      -5px -5px 0 rgb(0, 0, 0);
+      background-size: cover;
+  }
+  
+  .question__title {
+    padding: 2%;
+    margin-block-end: 5px;
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 3.8rem;
+  }
