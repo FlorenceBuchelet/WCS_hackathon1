@@ -1,5 +1,4 @@
 import "./App.scss";
-import WrongAnswerPopup from "./components/WrongAnswerPopup/WrongAnswerPopup";
 import Questions from "./pages/Questions/Questions";
 import Homepage from "./pages/Homepage/Homepage";
 

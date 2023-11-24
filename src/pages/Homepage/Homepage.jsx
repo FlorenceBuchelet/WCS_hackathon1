@@ -1,5 +1,4 @@
 import "./Homepage.scss";
-import Excuse from "../../components/excuse/Excuse";
 import Baubles from "../../components/baubles/Baubles";
 import Baubles_1 from "../../components/baubles/Baubles_1";
 import Baubles_2 from "../../components/baubles/Baubles_2";
@@ -31,7 +30,7 @@ function Homepage() {
       </section>
       <section className="homepage__text">
         <h1 className="homepage__title">
-          Nous avons les excuses ultimes pour éviter Noël. 
+          Nous avons les excuses ultimes pour éviter Noël.
           <br />
           Vous les voulez ?
         </h1>

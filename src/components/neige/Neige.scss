@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas');
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+
+body{
+  background-color:black;
+  text-align:center;
+}
+
+#video {
+  width: 560;
+  height: 315;
+  margin: 50px auto;
+}
+
+#paroles {
+  color:red;
+  font-weight:bold;
+  font-size:30px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+}
+
+.texte1{
+  font-size:60px;
+  font-family:'Mountains of Christmas', cursive;
+  text-shadow:2px 2px 0 orange, 3px 5px 0 white;
+  animation:zoom 8s 10s;
+}
+.texte2{
+  font-family:'Slabo 27px', serif;
+  animation:anim 10s 18s;
+}
+.texte3{
+  font-family:'Slabo 27px', serif;
+  animation:anim 9s 25s;
+}
+.texte4{
+  font-family:'Slabo 27px', serif;
+  animation:anim 11s 31s;
+}
+.texte5{
+  font-family:'Slabo 27px', serif;
+  animation:anim 13s 37s;
+}
+
+/*apparition du texte*/
+@keyframes anim{
+  0%{opacity:0;}
+  50%{opacity:1;}
+  100%{opacity:0;}
+}
+
+/*zoom pour texte1*/
+@keyframes zoom{
+  0%{opacity:0;transform:scale(1.5);}
+  25%{opacity:1;transform:scale(2);}
+  50%{opacity:1;transform:scale(1);}
+  75%{opacity:1;transform:scale(3);}
+  100%{opacity:1;transform:scale(1);}
+}
+
+/*flocons de neige*/
+.snow {
+	position: relative;
+	margin: 0 auto;
+	width : 716px;
+	height: 813px;
+}
+ 
+.s-large,
+.s-small {
+	position : absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+}
+ 
+.s-large {
+	background: url("https://www.creativejuiz.fr/blog/doc/snow-animation-css3/particules_large.png") repeat 0px 0px;
+	-webkit-animation: neige-tombe 2s linear infinite;
+	     -o-animation: neige-tombe 2s linear infinite;
+	        animation: neige-tombe 2s linear infinite;
+}
+
+.s-small {
+	background: url("https://www.creativejuiz.fr/blog/doc/snow-animation-css3/particules_medium.png") repeat 0px 0px;
+	-webkit-animation: neige-tombe 12s linear infinite;
+	     -o-animation: neige-tombe 12s linear infinite;
+	        animation: neige-tombe 12s linear infinite;
+}
+ 
+@-webkit-keyframes neige-tombe {
+	from {background-position: 0 0;}
+	to {background-position: 0 100%;}
+}
+@keyframes neige-tombe {
+	from {background-position: 0 0;}
+	to {background-position: 0 100%;}
+}
