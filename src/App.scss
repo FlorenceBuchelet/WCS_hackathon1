@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap");
 // variables ici
 $background-color: #010d24;
 $bauble-color-red: #8b1111;
@@ -15,9 +16,11 @@ body {
   background-color: $background-color;
   padding: 2%;
   background-image: url(../public/assets/neige2.gif);
-  overflow-x: hidden;
+  overflow-x: hidden;;
 }
-
+* {
+  font-family: "Mountains of Christmas", serif;
+}
 .App__question {
   position: relative;
   top: 60em;
