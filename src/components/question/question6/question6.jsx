@@ -42,7 +42,7 @@ function Question6({ count, setCount, nextPos, setNextPos }) {
             smooth={true}
             offset={0}
             duration={5000}
-            onClick={handleclick}>
+            onClick={handleclickWrong}>
             OuiiiHiii 🎶
           </Link></button>
         <button className="question6__buttons">

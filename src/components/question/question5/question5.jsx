@@ -35,7 +35,7 @@ function Question5({ count, setCount, nextPos, setNextPos }) {
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={2000}
             onClick={handleclickGood}
           >
             Printemps
@@ -48,7 +48,7 @@ function Question5({ count, setCount, nextPos, setNextPos }) {
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={2000}
             onClick={handleclickGood}
           >
             Eté
@@ -61,7 +61,7 @@ function Question5({ count, setCount, nextPos, setNextPos }) {
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={2000}
             onClick={handleclickGood}
           >
             Automne
@@ -74,7 +74,7 @@ function Question5({ count, setCount, nextPos, setNextPos }) {
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={2000}
             onClick={handleclickWrong}
           >
             Hiver

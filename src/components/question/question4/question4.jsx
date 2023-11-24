@@ -34,7 +34,7 @@ function Question4({ count, setCount, nextPos, setNextPos }) {
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={2000}
             onClick={handleclickWrong}
           >
             Dinde
@@ -47,7 +47,7 @@ function Question4({ count, setCount, nextPos, setNextPos }) {
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={2000}
             onClick={handleclickGood}
           >
             Choucroute

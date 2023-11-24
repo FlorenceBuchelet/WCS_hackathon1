@@ -17,6 +17,7 @@ $font-color-2: black;
   justify-content: space-between;
   flex-direction: column;
   color: white;
+  z-index: 10;
 }
 
 .questions__left {
@@ -34,6 +35,6 @@ $font-color-2: black;
   display: flex;
   flex-direction: column;
   float: right;
-  z-index: 2;
+  z-index: 10;
 }
 
