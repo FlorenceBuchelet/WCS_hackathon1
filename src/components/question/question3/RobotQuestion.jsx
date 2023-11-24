@@ -1,7 +1,14 @@
 import "./RobotQuestion.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
+function RobotQuestion({
+  count,
+  setCount,
+  nextPos,
+  setNextPos,
+  show,
+  setShow,
+}) {
   const scrollTo = () => {
     scroll.scrollTo(nextPos);
   };
@@ -16,12 +23,11 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
     }, 100);
   };
   const handleclickWrong = () => {
-    setNextPos(750);
-    setCount(1);
     setTimeout(() => {
-      console.log("after timeout");
-      scrollTo();
-    }, 100);
+      setNextPos(750);
+      setCount(1);
+      setShow(true);
+    }, 2000);
   };
   return (
     <div className="robotQuestion">
@@ -37,7 +43,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             spy={true}
             smooth={true}
             offset={0}
-            duration={100}
+            duration={2000}
             onClick={handleclickWrong}
             className="robotQuestion__answer--wrong"
           >
@@ -53,7 +59,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             spy={true}
             smooth={true}
             offset={0}
-            duration={100}
+            duration={2000}
             onClick={handleclickWrong}
             className="robotQuestion__answer--wrong"
           >
@@ -68,7 +74,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             spy={true}
             smooth={true}
             offset={0}
-            duration={100}
+            duration={2000}
             onClick={handleclickWrong}
             className="robotQuestion__answer--wrong"
           >
@@ -83,7 +89,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             spy={true}
             smooth={true}
             offset={0}
-            duration={100}
+            duration={2000}
             onClick={handleclickWrong}
             className="robotQuestion__answer--wrong"
           >
@@ -98,7 +104,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             spy={true}
             smooth={true}
             offset={0}
-            duration={100}
+            duration={2000}
             onClick={handleclickWrong}
             className="robotQuestion__answer--wrong"
           >
@@ -113,7 +119,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             spy={true}
             smooth={true}
             offset={0}
-            duration={100}
+            duration={2000}
             onClick={handleclickWrong}
             className="robotQuestion__answer--wrong"
           >
@@ -129,7 +135,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             spy={true}
             smooth={true}
             offset={0}
-            duration={100}
+            duration={2000}
             onClick={handleclickGood}
             className="robotQuestion__answer--right"
           >
@@ -144,7 +150,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             spy={true}
             smooth={true}
             offset={0}
-            duration={100}
+            duration={2000}
             onClick={handleclickWrong}
             className="robotQuestion__answer--wrong"
           >
@@ -159,7 +165,7 @@ function RobotQuestion({ count, setCount, nextPos, setNextPos }) {
             spy={true}
             smooth={true}
             offset={0}
-            duration={100}
+            duration={2000}
             onClick={handleclickWrong}
             className="robotQuestion__answer--wrong"
           >

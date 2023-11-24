@@ -1,7 +1,7 @@
 import "./question5.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-function Question5({ count, setCount, nextPos, setNextPos }) {
+function Question5({ count, setCount, nextPos, setNextPos, show, setShow }) {
   const scrollTo = () => {
     scroll.scrollTo(nextPos);
   };
@@ -16,21 +16,19 @@ function Question5({ count, setCount, nextPos, setNextPos }) {
     }, 100);
   };
   const handleclickWrong = () => {
-    setNextPos(750);
-    setCount(1);
     setTimeout(() => {
-      console.log("after timeout");
-      scrollTo();
-    }, 100);
+      setNextPos(750);
+      setCount(1);
+      setShow(true);
+    }, 2000);
   };
   return (
     <div className="question5">
       <section className="question5__section">
         <h1 className="question5__title">Quelle est ta saison préférée ?</h1>
-          <div className="question5__buttons--container">
-  
+        <div className="question5__buttons--container">
           <Link
-          className="question__buttons--wide-button question5__buttons--printemps"
+            className="question__buttons--wide-button question5__buttons--printemps"
             activeClass="active"
             /* to="question6" */
             spy={true}
@@ -38,25 +36,21 @@ function Question5({ count, setCount, nextPos, setNextPos }) {
             offset={0}
             duration={2000}
             onClick={handleclickGood}
-          >
-            
-          </Link>
-    
-          <Link
-          className="question__buttons--wide-button question5__buttons--ete"
-            activeClass="active"
-            /* to="question6" */
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={2000}
-            onClick={handleclickGood}
-          >
-            
-          </Link>
+          ></Link>
 
           <Link
-          className="question__buttons--wide-button question5__buttons--automne"
+            className="question__buttons--wide-button question5__buttons--ete"
+            activeClass="active"
+            /* to="question6" */
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={2000}
+            onClick={handleclickGood}
+          ></Link>
+
+          <Link
+            className="question__buttons--wide-button question5__buttons--automne"
             activeClass="active"
             /*  to="question6" */
             spy={true}
@@ -64,12 +58,10 @@ function Question5({ count, setCount, nextPos, setNextPos }) {
             offset={0}
             duration={2000}
             onClick={handleclickGood}
-          >
-            
-          </Link>
-  
+          ></Link>
+
           <Link
-          className="question__buttons--wide-button question5__buttons--hiver"
+            className="question__buttons--wide-button question5__buttons--hiver"
             activeClass="active"
             to="question1"
             spy={true}
@@ -77,10 +69,7 @@ function Question5({ count, setCount, nextPos, setNextPos }) {
             offset={0}
             duration={2000}
             onClick={handleclickWrong}
-          >
-            
-          </Link>
-   
+          ></Link>
         </div>
       </section>
     </div>

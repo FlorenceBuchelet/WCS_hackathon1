@@ -1,19 +1,16 @@
 import "./WrongAnswerPopup.scss";
 import { useState } from "react";
-function WrongAnswerPopup() {
-  const [show, setShow] = useState(true);
+function WrongAnswerPopup({ show, setShow }) {
   const [isActive, setIsActive] = useState("active");
   const handleClick = () => {
-    setIsActive("Active");
-    setTimeout(() => {
-      setShow(!show);
-    }, 900);
-
+    setIsActive("active");
     setIsActive("notActive");
+    setTimeout(() => {
+      setShow(false);
+    }, 3000);
   };
   return (
     <div>
-    {show && ( 
       <section className={`WrongAnswerPopup ${isActive}`}>
         <h1>Mauvaise réponse !!</h1>
         <p>Concentre-toi ! Je me demande si tu détestes réellement noël.</p>
@@ -22,7 +19,6 @@ function WrongAnswerPopup() {
           Je veux réessayer !
         </button>
       </section>
-    )} 
     </div>
   );
 }
