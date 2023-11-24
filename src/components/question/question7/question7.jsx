@@ -42,7 +42,7 @@ function Question7({ count, setCount, nextPos, setNextPos, show, setShow }) {
               duration={5000}
               onClick={handleclickGood}
             >
-              Tout le temps !
+              Jamais.
             </Link>
             <Link
             className="question__buttons"
@@ -54,7 +54,7 @@ function Question7({ count, setCount, nextPos, setNextPos, show, setShow }) {
               duration={5000}
               onClick={handleclickWrong}
             >
-              Jamais.
+              Tout le temps !!
             </Link>
 
         </div>
