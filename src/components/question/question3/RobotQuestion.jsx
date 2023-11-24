@@ -46,10 +46,9 @@ function RobotQuestion({
             offset={0}
             duration={2000}
             onClick={handleclickWrong}
-            className="robotQuestion__answer--wrong"
-          >
+            className="robotQuestion__answer--wrong">
             <img
-              src="src/assets/sapins/sapin4.jpg"
+              src="../../../assets/sapins/sapin4.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
@@ -62,10 +61,9 @@ function RobotQuestion({
             offset={0}
             duration={2000}
             onClick={handleclickWrong}
-            className="robotQuestion__answer--wrong"
-          >
+            className="robotQuestion__answer--wrong">
             <img
-              src="src/assets/sapins/sapin3.jpeg"
+              src="../../../assets/sapins/sapin3.jpeg"
               alt=""
               className="robotQuestion__grid--img"
             />
@@ -77,10 +75,9 @@ function RobotQuestion({
             offset={0}
             duration={2000}
             onClick={handleclickWrong}
-            className="robotQuestion__answer--wrong"
-          >
+            className="robotQuestion__answer--wrong">
             <img
-              src="src/assets/sapins/sapin1.jpg"
+              src="../../../assets/sapins/sapin1.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
@@ -92,10 +89,9 @@ function RobotQuestion({
             offset={0}
             duration={2000}
             onClick={handleclickWrong}
-            className="robotQuestion__answer--wrong"
-          >
+            className="robotQuestion__answer--wrong">
             <img
-              src="src/assets/sapins/sapin7.jpg"
+              src="../../../assets/sapins/sapin7.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
@@ -107,10 +103,9 @@ function RobotQuestion({
             offset={0}
             duration={2000}
             onClick={handleclickWrong}
-            className="robotQuestion__answer--wrong"
-          >
+            className="robotQuestion__answer--wrong">
             <img
-              src="src/assets/sapins/sapin5.jpg"
+              src="../../../assets/sapins/sapin5.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
@@ -122,10 +117,9 @@ function RobotQuestion({
             offset={0}
             duration={2000}
             onClick={handleclickWrong}
-            className="robotQuestion__answer--wrong"
-          >
+            className="robotQuestion__answer--wrong">
             <img
-              src="src/assets/sapins/sapin2.jpg"
+              src="../../../assets/sapins/sapin2.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
@@ -138,10 +132,9 @@ function RobotQuestion({
             offset={0}
             duration={2000}
             onClick={handleclickGood}
-            className="robotQuestion__answer--right"
-          >
+            className="robotQuestion__answer--right">
             <img
-              src="src\assets\sapins\burningsapin.jpg"
+              src="../../../assets/sapins/burningsapin.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
@@ -153,10 +146,9 @@ function RobotQuestion({
             offset={0}
             duration={2000}
             onClick={handleclickWrong}
-            className="robotQuestion__answer--wrong"
-          >
+            className="robotQuestion__answer--wrong">
             <img
-              src="src/assets/sapins/sapin6.jpg"
+              src="../../../assets/sapins/sapin6.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
@@ -168,8 +160,7 @@ function RobotQuestion({
             offset={0}
             duration={2000}
             onClick={handleclickWrong}
-            className="robotQuestion__answer--wrong"
-          >
+            className="robotQuestion__answer--wrong">
             <img
               src="src/assets/sapins/sapin8.jpg"
               alt=""
