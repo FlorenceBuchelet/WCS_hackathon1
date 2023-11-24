@@ -6,6 +6,20 @@ function Baubles_4() {
   return (
     <>
       <article className="baubles__chaine">
+      <div className="baubles__chaine__link"></div>
+        <div className="baubles__chaine__link"></div>
+        <div className="baubles__chaine__link"></div>
+        <div className="baubles__chaine__link"></div>
+        <div className="baubles__chaine__link"></div>
+        <div className="baubles__chaine__link"></div>
+        <div className="baubles__chaine__link"></div>
+        <div className="baubles__chaine__link"></div>
+        <div className="baubles__chaine__link"></div>
+        <div className="baubles__chaine__link"></div>
+        <div className="baubles__chaine__link"></div>
+        <div className="baubles__chaine__link"></div>
+        <div className="baubles__chaine__link"></div>
+        <div className="baubles__chaine__link"></div>
         <div className="baubles__chaine__link"></div>
         <div className="baubles__chaine__link"></div>
         <div className="baubles__chaine__link"></div>
