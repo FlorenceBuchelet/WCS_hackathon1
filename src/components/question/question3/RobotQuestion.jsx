@@ -31,6 +31,7 @@ function RobotQuestion({
   };
   return (
     <div className="robotQuestion">
+        <h1 className="question__title">On vérifie juste :</h1>
       <div className="robotQuestion__container">
         <div className="robotQuestion__title">
           <p>Choisissez le plus joli sapin</p>
