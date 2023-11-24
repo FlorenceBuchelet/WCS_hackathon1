@@ -49,7 +49,7 @@ function RobotQuestion({
             className="robotQuestion__answer--wrong"
           >
             <img
-              src="src/assets/sapins/sapin4.jpg"
+              src="public/assets/sapins/sapin4.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
@@ -65,7 +65,7 @@ function RobotQuestion({
             className="robotQuestion__answer--wrong"
           >
             <img
-              src="src/assets/sapins/sapin3.jpeg"
+              src="public/assets/sapins/sapin3.jpeg"
               alt=""
               className="robotQuestion__grid--img"
             />
@@ -80,7 +80,7 @@ function RobotQuestion({
             className="robotQuestion__answer--wrong"
           >
             <img
-              src="src/assets/sapins/sapin1.jpg"
+              src="public/assets/sapins/sapin1.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
@@ -95,7 +95,7 @@ function RobotQuestion({
             className="robotQuestion__answer--wrong"
           >
             <img
-              src="src/assets/sapins/sapin7.jpg"
+              src="public/assets/sapins/sapin7.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
@@ -110,7 +110,7 @@ function RobotQuestion({
             className="robotQuestion__answer--wrong"
           >
             <img
-              src="src/assets/sapins/sapin5.jpg"
+              src="public/assets/sapins/sapin5.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
@@ -125,7 +125,7 @@ function RobotQuestion({
             className="robotQuestion__answer--wrong"
           >
             <img
-              src="src/assets/sapins/sapin2.jpg"
+              src="public/assets/sapins/sapin2.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
@@ -141,7 +141,7 @@ function RobotQuestion({
             className="robotQuestion__answer--right"
           >
             <img
-              src="src/assets/sapins/burningsapin.jpg"
+              src="public\assets\sapins\burningsapin.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
@@ -156,7 +156,7 @@ function RobotQuestion({
             className="robotQuestion__answer--wrong"
           >
             <img
-              src="src/assets/sapins/sapin6.jpg"
+              src="public/assets/sapins/sapin6.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
@@ -171,7 +171,7 @@ function RobotQuestion({
             className="robotQuestion__answer--wrong"
           >
             <img
-              src="src/assets/sapins/sapin8.jpg"
+              src="public/assets/sapins/sapin8.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />
