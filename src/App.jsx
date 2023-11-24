@@ -12,10 +12,10 @@ function App() {
         <section className="App__question">
           <Questions />
         </section>
-      <div className="snow">
+{/*       <div className="snow">
         <div className="s-large"></div>
         <div className="s-small"></div> 
-       </div>
+       </div> */}
     </>
   );
 }

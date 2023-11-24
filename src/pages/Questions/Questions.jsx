@@ -108,7 +108,6 @@ function Questions() {
             setShow={setShow}
           />
         )}
-
       </aside>
     </div>
   );
