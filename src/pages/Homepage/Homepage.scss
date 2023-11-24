@@ -119,7 +119,7 @@ $font-color-2: black;
     align-items: center;
     border-radius: 20px;
     padding: 0.5em;
-background-color: #04173bf7;;
+background-color: #388355;
 border: 7px double #ffd15c;
     .homepage__title {
       color: $bauble-color-white;
@@ -127,12 +127,13 @@ border: 7px double #ffd15c;
       margin: 1em;
     }
     .homepage__button {
-      background-color:rgb(145, 26, 26);
-      color: #d9d9d9;
+      border: 7px double #ffd15c;
+      background-color:#6c0606;
+      color: #ffffff;
       padding: 0.5em;
       font-size: 2em;
       border-radius: 20px;
-      border: none;
+      
     }
   }
   
