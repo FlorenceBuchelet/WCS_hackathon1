@@ -17,7 +17,7 @@ function Question4({ count, setCount, nextPos, setNextPos, show, setShow }) {
   };
   const handleclickWrong = () => {
     setTimeout(() => {
-      setNextPos(750);
+      setNextPos(1725);
       setCount(1);
       setShow(true);
     }, 2000);
@@ -26,8 +26,8 @@ function Question4({ count, setCount, nextPos, setNextPos, show, setShow }) {
     <div className="question4">
       <section className="question4__section">
         <h1 className="question__title">Dinde ou Choucroute ?</h1>
- 
-          <Link
+
+        <Link
           className="question__buttons--wide-button question4__buttons--left"
           activeClass="active"
           to="question1"

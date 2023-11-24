@@ -24,14 +24,14 @@ function RobotQuestion({
   };
   const handleclickWrong = () => {
     setTimeout(() => {
-      setNextPos(750);
+      setNextPos(1725);
       setCount(1);
       setShow(true);
     }, 2000);
   };
   return (
     <div className="robotQuestion">
-        <h1 className="question__title">On vérifie juste :</h1>
+      <h1 className="question__title">On vérifie juste :</h1>
       <div className="robotQuestion__container">
         <div className="robotQuestion__title">
           <p>Choisissez le plus joli sapin</p>

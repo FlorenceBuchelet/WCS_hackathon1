@@ -17,7 +17,7 @@ function Question6({ count, setCount, nextPos, setNextPos, show, setShow }) {
   };
   const handleclickWrong = () => {
     setTimeout(() => {
-      setNextPos(750);
+      setNextPos(1725);
       setCount(1);
       setShow(true);
     }, 2000);
@@ -26,20 +26,20 @@ function Question6({ count, setCount, nextPos, setNextPos, show, setShow }) {
     <div className="question6">
       <section className="question6__section">
         <h1 className="question__title">Mariah Carey ?</h1>
-          <img
-            className="question__image"
-            src="../../../assets/MariahCarrey.webp"
-            alt="famille à noël"
-          />
-          <div className="question6__buttons--container">
-        <Link
-        className="question__buttons"
+        <img
+          className="question__image"
+          src="../../../assets/MariahCarrey.webp"
+          alt="famille à noël"
+        />
+        <div className="question6__buttons--container">
+          <Link
+            className="question__buttons"
             activeClass="active"
             to="question1"
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={2000}
             onClick={handleclickWrong}
           >
             OuiiiHiii 🎶
@@ -52,7 +52,7 @@ function Question6({ count, setCount, nextPos, setNextPos, show, setShow }) {
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={2000}
             onClick={handleclickGood}
           >
             Nononono 👂
