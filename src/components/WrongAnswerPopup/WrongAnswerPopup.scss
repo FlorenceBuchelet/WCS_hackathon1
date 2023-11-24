@@ -12,6 +12,7 @@ $font-color-2: black;
 //fin des variables
 
 .WrongAnswerPopup {
+  z-index: 999;
   border: 20px ridge #87ff50;
   background: #e3c3c3;
   padding: 1vw;
