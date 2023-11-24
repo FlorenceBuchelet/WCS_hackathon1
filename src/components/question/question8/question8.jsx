@@ -24,7 +24,7 @@ function Question8({ count, setCount, nextPos, setNextPos, show, setShow }) {
   return (
     <div className="question8">
       <section className="question8__section">
-        <h1 className="question__title">Bambi ou Grinch ?</h1>
+        <h1 className="question8__title">La Course aux Jouets ou Le Grinch ?</h1>
         <div className="question8__buttons--container">
           <Link
             className="question8__buttons question8__buttons--left"
