@@ -92,6 +92,7 @@ $font-color-2: black;
     position: absolute;
     top: -26em;
     left: -38em;
+    z-index: 1;
   }
   .homepage__baubles__4 {
     animation: bouledeboule ease-in-out 5s;
