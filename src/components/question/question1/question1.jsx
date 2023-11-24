@@ -8,7 +8,7 @@ import {
   scrollSpy,
 } from "react-scroll";
 import { useEffect } from "react";
-function Question1({ count, setCount, nextPos, setNextPos }) {
+function Question1({ count, setCount, nextPos, setNextPos, show, setShow }) {
   const scrollTo = () => {
     scroll.scrollTo(nextPos);
   };
@@ -24,8 +24,11 @@ function Question1({ count, setCount, nextPos, setNextPos }) {
     }, 100);
   };
   const handleclickWrong = () => {
+    console.log("enter handleclickwrong");
     setNextPos(750);
     setCount(1);
+    setShow(true);
+    console.log("show:", show);
     setTimeout(() => {
       console.log("after timeout");
       scrollTo();
