@@ -26,80 +26,62 @@ function Question5({ count, setCount, nextPos, setNextPos }) {
   return (
     <div className="question5">
       <section className="question5__section">
-        <h1>Quelle est ta saison préférée ?</h1>
-        <button className="question5__button">
+        <h1 className="question5__title">Quelle est ta saison préférée ?</h1>
+          <div className="question5__buttons--container">
+        <button className="question5__buttons question5__buttons--printemps">
           <Link
             activeClass="active"
             /* to="question6" */
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={2000}
             onClick={handleclickGood}
           >
             Printemps
           </Link>
         </button>
-        <button className="question5__button">
+        <button className="question5__buttons question5__buttons--ete">
           <Link
             activeClass="active"
             /* to="question6" */
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={2000}
             onClick={handleclickGood}
           >
             Eté
           </Link>
         </button>
-        <button className="question5__button">
+        <button className="question5__buttons question5__buttons--automne">
           <Link
             activeClass="active"
             /*  to="question6" */
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={2000}
             onClick={handleclickGood}
           >
             Automne
           </Link>
         </button>
-        <button className="question5__button">
+        <button className="question5__buttons question5__buttons--hiver">
           <Link
             activeClass="active"
             to="question1"
             spy={true}
             smooth={true}
             offset={0}
-            duration={5000}
+            duration={2000}
             onClick={handleclickWrong}
           >
             Hiver
           </Link>
         </button>
+        </div>
       </section>
-      <img
-        className="question5__image"
-        src="../../../assets/pintemps.jpeg"
-        alt="tableau d'un adoubement"
-      />
-      <img
-        className="question5__image"
-        src="../../../assets/Ete.webp"
-        alt="tableau d'un adoubement"
-      />
-      <img
-        className="question5__image"
-        src="../../../assets/automne.avif"
-        alt="tableau d'un adoubement"
-      />
-      <img
-        className="question5__image"
-        src="../../../assets/hiver.jpg"
-        alt="tableau d'un adoubement"
-      />
     </div>
   );
 }

@@ -1,0 +1,76 @@
+// variables ici
+$background-color: #010d24;
+$bauble-color-red: #8b1111;
+$bauble-color-bleu: #4ea0bb;
+$bauble-color-vert: #1b603f;
+$bauble-color-grey: #d9d9d9;
+$bauble-color-white: #ffff;
+$decoration-color: #ffd15c;
+$font-family: Arial, Helvetica, sans-serif;
+$font-color-1: white;
+$font-color-2: black;
+// fin des variables
+
+.question6 {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 750px;
+}
+
+.question6__section {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.question6__image {
+  height: 400px;
+}
+
+.question6__title {
+  padding: 2%;
+  margin-block-end: 5px;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 2.5rem;
+}
+
+.question6__buttons {
+    width: 300px;
+    height: 100px;
+    border-radius: 20%;
+    margin-block-start: 15px;
+    font-size: 1.3rem;
+    background-image: url("public/assets/cadrefondbouton.jpg");
+    color: white;
+    font-weight: bold;
+    text-shadow:
+      0px 5px 0 rgb(0, 0, 0),
+      0px -5px 0 rgb(0, 0, 0),
+      5px 0px 0 rgb(0, 0, 0),
+      -5px 0px 0 rgb(0, 0, 0),
+      5px 5px 0 rgb(0, 0, 0),
+      5px -5px 0 rgb(0, 0, 0),
+      -5px 5px 0 rgb(0, 0, 0),
+      -5px -5px 0 rgb(0, 0, 0),
+      0px 5px 0 rgb(0, 0, 0),
+      0px -5px 0 rgb(0, 0, 0),
+      5px 0px 0 rgb(0, 0, 0),
+      -5px 0px 0 rgb(0, 0, 0),
+      5px 5px 0 rgb(0, 0, 0),
+      5px -5px 0 rgb(0, 0, 0),
+      -5px 5px 0 rgb(0, 0, 0),
+      -5px -5px 0 rgb(0, 0, 0);
+  }
+  
+.question6__buttons--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}

@@ -15,12 +15,13 @@ $font-color-2: black;
 $robotBlue: rgb(0, 165, 247);
 
 .robotQuestion {
-  background-color: aquamarine;
   padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   max-height: 100%;
+  height: 750px;
 }
 
 .robotQuestion__container {
