@@ -141,7 +141,7 @@ function RobotQuestion({
             className="robotQuestion__answer--right"
           >
             <img
-              src="src/assets/sapins/burningsapin.jpg"
+              src="src\assets\sapins\burningsapin.jpg"
               alt=""
               className="robotQuestion__grid--img"
             />

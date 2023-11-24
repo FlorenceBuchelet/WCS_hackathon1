@@ -31,7 +31,9 @@ function Homepage() {
       </section>
       <section className="homepage__text">
         <h1 className="homepage__title">
-          Nous avons les meilleures excuses pour éviter Noël. Vous les voulez ?
+          Nous avons les excuses ultimes pour éviter Noël. 
+          <br />
+          Vous les voulez ?
         </h1>
         {/*cool button*/}
         <button className="homepage__button" onClick={scrollTo}>
