@@ -6,7 +6,7 @@ It was a messy, delirious and sleep-deprived project (COVID helped). Congratulat
 
 Anyway, we won! 😁
 
-![Awards](https://github.com/FlorenceBuchelet/WCS_hackathon1/assets/144147299/79cdf1af-f1b4-4513-a541-334c8311b0a5)
+![Awards](https://github.com/FlorenceBuchelet/WCS_hackathon1/assets/144147299/f9dbabbc-ef97-417e-98b0-3ead0dd8e151)
 
 ---
 
